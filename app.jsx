@@ -51,7 +51,7 @@ function App() {
         <h1 class="headerMain">--- 活動を紹介 ---</h1>
 
         <section class="activity" style={ "padding:unset; margin:unset;" }>
-          <h2>惑星の魔法使い</h2>
+          <h2>CELECTIALS</h2>
           <p>
             キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載
             キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載
