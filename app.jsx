@@ -124,7 +124,52 @@ function App() {
 
           <section>
             <h2>コミュニティメンバ</h2>
-            <div class="flex-center">
+            <div class="flex-center" style="padding:1rem;">
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
+              <div class="memberIcon"></div>
               <div class="memberIcon"></div>
               <div class="memberIcon"></div>
               <div class="memberIcon"></div>
