@@ -64,6 +64,15 @@ header {
     z-index: -2;
 }
 
+#backgroundYoutubePlayerUnVisibler {
+      width: 100%;
+    background: aliceblue;
+    position: sticky;
+    top: 0;
+    z-index: -2;
+    height: 100vh;
+}
+
 .logo_img {
     padding: 1rem 0 0 1rem;
 }
