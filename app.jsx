@@ -24,6 +24,7 @@ function App() {
         <meta content="@_______" name="twitter:creator"/>
         <script src="https://unpkg.com/three@0.131.3/build/three.min.js"></script>
         <script src="/scripts/threeExample.js"></script>
+        <script src="/scripts/youtube.js"></script>
 
         <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
         <link rel="icon" href="/images/favicon.png"/>
@@ -36,19 +37,9 @@ function App() {
       </head>
 
       <body>
+        <div id="backgroundYoutubePlayer"></div>
         <header>
           <img class="logo_img" src="/images/bpp_150_alpha.png"/>
-          <p class={ "corporate_information" }>
-            <strong>私たちについて</strong>
-            <br/>
-            ＊サンプル
-            ようこそBeautifulPlanetsProjectへ<br/>
-            私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
-            私たちの目的はBlenderへの貢献。目的のためにCG惑星100個の制作とNFTとしてのを公開を進めています。 <br/>
-
-            NFTの転売時に発生する料率から経費を差し引いた最終利益をETH建てでBlenderへの寄付を続けています。 <br/>
-            透明性を持たせるためにハッシュの記録を検索し寄付毎に明細を自動で掲載していきます。 <br/>
-          </p>
         </header>
 
         <div class="stickyBackground">
@@ -156,6 +147,18 @@ function App() {
 
               Blenderに限らず、みんなが大好きなこと、得意なことを持ち寄って、新しいことやワクワクすることをやっていきたいです！✨
             </p>
+          <p class={ "corporate_information" }>
+            <strong>私たちについて</strong>
+            <br/>
+            ＊サンプル
+            ようこそBeautifulPlanetsProjectへ<br/>
+            私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
+            私たちの目的はBlenderへの貢献。目的のためにCG惑星100個の制作とNFTとしてのを公開を進めています。 <br/>
+
+            NFTの転売時に発生する料率から経費を差し引いた最終利益をETH建てでBlenderへの寄付を続けています。 <br/>
+            透明性を持たせるためにハッシュの記録を検索し寄付毎に明細を自動で掲載していきます。 <br/>
+          </p>
+
           </section>
 
         </main>
