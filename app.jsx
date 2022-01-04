@@ -232,7 +232,6 @@ function App() {
 
   async function handler(req) {
     const { pathname } = new URL( req.url );
-
     const pattern = new URLPattern({ pathname: "(/styles/|/images/|/scripts/):fileName" });
     const match = pattern.exec(req.url);
     if ( match ) {
@@ -241,7 +240,6 @@ function App() {
         "/styles/": "text/css" ,
         "/scripts/": "text/javascript" 
       }
-      console.log(pathname);
       const file = await Deno.readFile( "./assets/" + pathname );
       return new Response( file, {
         headers: { "content-type": mimeList[match.pathname.groups[0]] }
