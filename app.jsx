@@ -163,6 +163,16 @@ function App() {
 
         </section>
 
+        <section class=''>
+          <h2>寄付の記録</h2>
+          <div class="flex-center">
+            <p class="donationRecord">0.001ETH X0000000000000000000000</p>
+            <p class="donationRecord">0.001ETH X0000000000000000000000</p>
+            <p class="donationRecord">0.001ETH X0000000000000000000000</p>
+            <p class="donationRecord">0.001ETH X0000000000000000000000</p>
+          </div>
+        </section>
+
       </main>
       <footer>
         <a href="https://discord.gg/">Discord招待リンクを検討</a>
