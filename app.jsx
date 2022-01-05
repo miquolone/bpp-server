@@ -4,9 +4,9 @@
 /// <reference lib="dom.asynciterable" />
 /// <reference lib="deno.ns" />
 
-import { serve } from "https://deno.land/std@0.114.0/http/server.ts";
-import { listenAndServe } from "https://deno.land/std@0.114.0/http/mod.ts";
-import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.20/mod.ts";
+import { serve } from "https://deno.land/std@0.119.0/http/server.ts";
+import { listenAndServe } from "https://deno.land/std@0.119.0/http/mod.ts";
+import { h, renderSSR } from "https://deno.land/x/nano_jsx@v0.0.27/mod.ts";
 
 
 function App() {
