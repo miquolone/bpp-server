@@ -11,7 +11,7 @@ function onYouTubeIframeAPIReady() {
     videoId: 'eY58zNPsOJc',
     playerVars: {
       playsinline: 1,
-      loop: 1,
+      loop: 0,
       listType: 'playlist',
       playlist: 'eY58zNPsOJc', 
       rel: 0, 
