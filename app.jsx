@@ -44,13 +44,7 @@ function App() {
           <img class="logo_img" src="/images/bpp_150_alpha.png"/>
         </header>
 
-        <div class="stickyBackground">
-          ↓これは任意の惑星とかどうかな <br/>
-          <canvas id="myCanvas"></canvas>
-        </div>
-
         <main>
-          <h1 class="headerMain">--- 活動を紹介 ---</h1>
 
           <section class="activity" style={ "padding:unset; margin:unset;" }>
             <h2>CELECTIALS</h2>
@@ -74,6 +68,12 @@ function App() {
           </section>
 
           <div id="backgroundYoutubePlayerUnVisibler" >&emsp; ここからYoutubeを見えなくしようかな。再生は止めないといけないね</div>
+
+        <div class="stickyBackground">
+          ↓これは任意の惑星とかどうかな <br/>
+          <canvas id="myCanvas"></canvas>
+        </div>
+
 
           <section class="activity">
             <h2>惑星</h2>
