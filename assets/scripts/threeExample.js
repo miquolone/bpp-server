@@ -1,13 +1,10 @@
-
-
 function init() {
-
   const width = "331";
   const height = width * (1 / 1.7);
 
   const renderer = new THREE.WebGLRenderer({
     alpha: true,
-    canvas: document.querySelector('#myCanvas')
+    canvas: document.querySelector("#myCanvas"),
   });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(width, height);
@@ -29,5 +26,4 @@ function init() {
   }
 }
 
-window.addEventListener('load', init);
-
+window.addEventListener("load", init);
