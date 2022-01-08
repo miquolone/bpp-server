@@ -88,12 +88,7 @@ function App() {
             </div>
           </section>
 
-          <div id="backgroundYoutubePlayerUnVisibler">
-            &emsp; ここからYoutubeを見えなくしようかな。再生は止めないといけないね
-          </div>
-
-          <div class="stickyBackground">
-            ↓これは任意の惑星とかどうかな <br />
+          <div class="samePlanets">
             <canvas id="myCanvas"></canvas>
           </div>
 
