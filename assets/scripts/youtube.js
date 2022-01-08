@@ -31,7 +31,7 @@ function onPlayerReady(event) {
 }
 
 function onPlayerHandle(event) {
-  if ( event.target.getPlayerState() == YT.PlayerState.ENDED ) {
+  if ( event.target.getPlayerState() === YT.PlayerState.ENDED ) {
     event.target.mute();
   }
 }
