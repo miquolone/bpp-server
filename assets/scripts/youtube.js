@@ -41,7 +41,7 @@ function onPlayerHandle(event) {
  */
 function playMovie(play) {
   if ( play ) {
-    player.loaded && player.playVideo();
+    player.hasOwnProperty( 'playVideo' ) && player.playVideo();
   } else {
     player.stopVideo();
   }
