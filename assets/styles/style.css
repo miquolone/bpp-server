@@ -1,7 +1,7 @@
 
 html {
     font-size: 16px;
-    background: aliceblue;
+    background: #000;
 }
 
 .corporate_information {
@@ -199,6 +199,3 @@ footer {
     box-shadow: 3px 3px 1px #000, 0px 0px 3px 5px;
 }
 
-.bg_skew_border {
-    background-color: rgba(243, 243, 243, 0.6);
-}
