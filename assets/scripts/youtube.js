@@ -37,11 +37,7 @@ function onPlayerHandle(event) {
 }
 
 /**
- *
- * playerの停止と再生（0秒から）を操作する
- * 大画面時にmain髪切れる仕様なので、
- * スクロール時はカバーが表示されるようにした。
- *
+ * @param play Bool
  */
 function showVideoPlayer(play) {
   if ( play ) {
