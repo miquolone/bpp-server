@@ -11,11 +11,11 @@ function onYouTubeIframeAPIReady() {
     videoId: "eY58zNPsOJc",
     playerVars: {
       playsinline: 1,
-      loop: 0,
+      loop: 1,
       rel: 0,
-      seekTo: 58,
-      start: 58,
-      end: 60,
+      // seekTo: 58,
+      // start: 58,
+      // end: 60,
       controls: 0
     },
     events: {
@@ -32,9 +32,7 @@ function onPlayerReady(event) {
 
 function onPlayerHandle(event) {
   if ( event.target.getPlayerState() == YT.PlayerState.ENDED ) {
-    console.log( '完了' );
     event.target.mute();
-    event.target.seekTo( 58, false );
   }
 }
 
@@ -57,6 +55,7 @@ globalThis.addEventListener( "load", (event) => {
 
   function intersectionCallback(entries) {
     entries.forEach( entry => {
+      console.log( entry );
       showVideoPlayer( entry.isIntersecting );
       if ( entry.intersectionRatio >= 0.75 ) {
         console.log( 'isIntersecting', entry.isIntersecting );
