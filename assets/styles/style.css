@@ -80,26 +80,16 @@ html {
 }
 
 .stickyBackground {
-  position: sticky;
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
 }
-
-#backgroundYoutubePlayerUnVisibler {
-  width: 100%;
-  background: aliceblue;
-  position: sticky;
-  border-radius: 1rem;
-  top: 0;
-  height: 150vh;
-}
-
 
 .logo_img {
     padding: 1rem 0 0 1rem;
 }
 
 main {
+  background: #000d;
   position: relative;
     border-radius: 1rem;
     max-width: 1600px;
