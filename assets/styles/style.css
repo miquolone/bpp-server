@@ -36,7 +36,6 @@ html {
     min-height: calc( 100vw * 0.5625);
     width: auto;
     height: auto;
-    z-index: -2;
 }
 
 @media all and (min-width: 380px) {
@@ -91,7 +90,6 @@ html {
   background: aliceblue;
   position: sticky;
   top: 0;
-  z-index: -2;
   height: 150vh;
 }
 
@@ -101,6 +99,7 @@ html {
 }
 
 main {
+  position: relative;
     border-radius: 1rem;
     max-width: 1600px;
     margin: 1rem auto;
@@ -110,6 +109,7 @@ main {
 }
 
 body {
+  background: #000;
 }
 
 .headerMain {
