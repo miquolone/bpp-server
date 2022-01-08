@@ -63,13 +63,7 @@ globalThis.addEventListener( "load", (event) => {
     } );
   }
 
-  const option = {
-    rootMargin: "10px 2px",
-    threshold: [ 0, 0.5, 1.0 ],
-    rootMargin: '-0% 0px'
-  };
-
-  const observer = new IntersectionObserver( intersectionCallback, option );
+  const observer = new IntersectionObserver( intersectionCallback, { threshold: [ 0, 0.5, 1.0 ], rootMargin: '-0% 0px' } );
   observer.observe( document.querySelector( "header" ) );
 
 }, false );
