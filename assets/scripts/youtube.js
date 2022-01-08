@@ -45,7 +45,7 @@ function onPlayerHandle(event) {
  */
 function showVideoPlayer(play) {
   if ( play ) {
-    player.playVideo();
+    player.loaded && player.playVideo();
   } else {
     player.stopVideo();
   }
