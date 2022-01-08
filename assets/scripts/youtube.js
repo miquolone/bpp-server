@@ -39,7 +39,7 @@ function onPlayerHandle(event) {
 /**
  * @param play Bool
  */
-function showVideoPlayer(play) {
+function playMovie(play) {
   if ( play ) {
     player.loaded && player.playVideo();
   } else {
@@ -51,11 +51,7 @@ globalThis.addEventListener( "load", (event) => {
 
   function intersectionCallback(entries) {
     entries.forEach( entry => {
-      console.log( entry );
-      showVideoPlayer( entry.isIntersecting );
-      if ( entry.intersectionRatio >= 0.75 ) {
-        console.log( 'isIntersecting', entry.isIntersecting );
-      }
+      playMovie( entry.isIntersecting );
     } );
   }
 
