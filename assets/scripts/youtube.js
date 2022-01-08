@@ -1,12 +1,13 @@
-  ///document.addEventListener('visibilitychange', e => {console.log(e)}, false);
-const tag = document.createElement("script");
+///document.addEventListener('visibilitychange', e => {console.log(e)}, false);
+const tag = document.createElement( "script" );
 tag.src = "https://www.youtube.com/iframe_api";
-const firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+const firstScriptTag = document.getElementsByTagName( "script" )[ 0 ];
+firstScriptTag.parentNode.insertBefore( tag, firstScriptTag );
 
 let player;
+
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player("backgroundYoutubePlayer", {
+  player = new YT.Player( "backgroundYoutubePlayer", {
     videoId: "eY58zNPsOJc",
     playerVars: {
       playsinline: 1,
@@ -15,13 +16,13 @@ function onYouTubeIframeAPIReady() {
       seekTo: 58,
       start: 58,
       end: 60,
-      controls: 0,
+      controls: 0
     },
     events: {
       "onReady": onPlayerReady,
-      "onStateChange": onPlayerHandle,
-    },
-  });
+      "onStateChange": onPlayerHandle
+    }
+  } );
 }
 
 function onPlayerReady(event) {
@@ -30,10 +31,10 @@ function onPlayerReady(event) {
 }
 
 function onPlayerHandle(event) {
-  if (event.target.getPlayerState() == YT.PlayerState.ENDED) {
-    console.log('完了');
+  if ( event.target.getPlayerState() == YT.PlayerState.ENDED ) {
+    console.log( '完了' );
     event.target.mute();
-    event.target.seekTo(58, false);
+    event.target.seekTo( 58, false );
   }
 }
 
@@ -45,31 +46,31 @@ function onPlayerHandle(event) {
  *
  */
 function showVideoPlayer(play) {
-  if (play) {
-    player.playVideo() ;
+  if ( play ) {
+    player.playVideo();
   } else {
-    player.stopVideo() 
+    player.stopVideo();
   }
 }
 
-globalThis.addEventListener("load", (event) => {
+globalThis.addEventListener( "load", (event) => {
 
   function intersectionCallback(entries) {
-    entries.forEach(entry => {
-      showVideoPlayer(entry.isIntersecting);
-      if (entry.intersectionRatio >= 0.75) {
-        console.log('isIntersecting', entry.isIntersecting);
+    entries.forEach( entry => {
+      showVideoPlayer( entry.isIntersecting );
+      if ( entry.intersectionRatio >= 0.75 ) {
+        console.log( 'isIntersecting', entry.isIntersecting );
       }
-    });
+    } );
   }
 
   const option = {
     rootMargin: "10px 2px",
-    threshold: [0, 0.5, 1.0],
+    threshold: [ 0, 0.5, 1.0 ],
     rootMargin: '-0% 0px'
-  }
+  };
 
-  const observer = new IntersectionObserver(intersectionCallback, option);
-  observer.observe(document.querySelector("header"));
+  const observer = new IntersectionObserver( intersectionCallback, option );
+  observer.observe( document.querySelector( "header" ) );
 
-}, false);
+}, false );
