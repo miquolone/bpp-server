@@ -57,6 +57,10 @@ html {
     margin: 3rem 0;
 }
 
+.m0 {
+    margin: 0;
+}
+
 .activity p {
     width: 90%;
     margin: 0 auto;
@@ -96,7 +100,6 @@ main {
 
 body {
     background: #000;
-    margin-bottom: 3rem;
 }
 
 .headerMain {
@@ -175,15 +178,3 @@ h2:before {
     height: 3rem;
     background: #827;
 }
-
-footer {
-    margin: 1rem auto;
-    margin-bottom: 0;
-    padding: 2rem 0;
-    max-width: 1600px;
-    text-align: center;
-    background: #fff;
-    border-radius: 1rem;
-    box-shadow: 3px 3px 1px #000, 0px 0px 3px 5px;
-}
-

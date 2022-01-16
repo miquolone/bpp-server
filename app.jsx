@@ -158,35 +158,18 @@ function App() {
             </div>
           </section>
 
-          <section class="activity">
-            <h2>音楽</h2>
-            <div class="activity_contents">
-              /// 音楽
-            </div>
-          </section>
-
-          <section class="activity">
-            <h2>Sandbox</h2>
-            <div class="activity_contents">
-              /// Sandbox
-            </div>
-          </section>
-
           <section>
             <h2>コミュニティメンバ</h2>
             <div class="flex-center" style="padding:1rem;">
-              <div class="memberIcon"><img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" }/>
-              </div>
-              <div class="memberIcon"></div>
-              <div class="memberIcon"></div>
-              <div class="memberIcon"></div>
-              <div class="memberIcon"></div>
+              <p class="memberIcon">
+                <img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" }/>
+              </p>
             </div>
           </section>
 
-          <section class="activity">
+          <section class="activity m0">
             <h2>BBPについて</h2>
-            <p class="message">
+            <p class="corporate_information message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
               私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
@@ -201,32 +184,9 @@ function App() {
 
               Blenderに限らず、みんなが大好きなこと、得意なことを持ち寄って、新しいことやワクワクすることをやっていきたいです！✨
             </p>
-            <p class={ "corporate_information" }>
-              <strong>私たちについて</strong>
-              <br/>
-              ＊サンプル ようこそBeautifulPlanetsProjectへ<br/>
-
-              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
-              私たちの目的はBlenderへの貢献。目的のためにCG惑星100個の制作とNFTとしてのを公開を進めています。 <br/>
-
-              NFTの転売時に発生する料率から経費を差し引いた最終利益をETH建てでBlenderへの寄付を続けています。 <br/>
-              透明性を持たせるためにハッシュの記録を検索し寄付毎に明細を自動で掲載していきます。 <br/>
-            </p>
           </section>
 
-          <section class="">
-            <h2>寄付の記録</h2>
-            <div class="flex-center">
-              <p class="donationRecord">0.001ETH X0000000000000000000000</p>
-              <p class="donationRecord">0.001ETH X0000000000000000000000</p>
-              <p class="donationRecord">0.001ETH X0000000000000000000000</p>
-              <p class="donationRecord">0.001ETH X0000000000000000000000</p>
-            </div>
-          </section>
         </main>
-        <footer>
-          <a href="https://discord.gg/">Discord招待リンクを検討</a>
-        </footer>
       </body>
     </html>
   );
