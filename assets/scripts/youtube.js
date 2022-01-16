@@ -40,10 +40,13 @@ function onPlayerHandle(event) {
  * @param play Bool
  */
 function playMovie(play) {
+  const playerElement = document.querySelector( '#backgroundYoutubePlayer' );
   if ( play ) {
     player.hasOwnProperty( 'playVideo' ) && player.playVideo();
+    playerElement.style.opacity = 1;
   } else {
     player.hasOwnProperty( 'stopVideo' ) && player.stopVideo();
+    playerElement.style.opacity = 0;
   }
 }
 
@@ -55,7 +58,7 @@ globalThis.addEventListener( "load", (event) => {
     } );
   }
 
-  const observer = new IntersectionObserver( intersectionCallback, { threshold: [ 0, 0.5, 1.0 ], rootMargin: '-0% 0px' } );
+  const observer = new IntersectionObserver( intersectionCallback, { threshold: [ 0, 0.01, 1.0 ], rootMargin: '0% 0px' } );
   observer.observe( document.querySelector( "header" ) );
 
 }, false );
