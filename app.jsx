@@ -23,30 +23,23 @@ function App() {
         <meta property="og:image" content=""/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="@_______" name="twitter:creator"/>
-        <script src="https://unpkg.com/three@0.131.3/build/three.min.js">
-        </script>
-        <script src="/scripts/threeExample.js"></script>
-        <script src="/scripts/youtube.js"></script>
+        <script src="https://unpkg.com/three@0.131.3/build/three.min.js"/>
+        <script src="/scripts/threeExample.js"/>
+        <script src="/scripts/youtube.js"/>
 
         <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
         <link rel="icon" href="/images/favicon.png"/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link
-          href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-          rel="stylesheet"
-        />
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
         <link href="/styles/style.css" rel="stylesheet"/>
-        <link
-          href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
-          rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"/>
       </head>
 
       <body>
-        <div id="backgroundYoutubePlayerUnVisibler "></div>
-        <div id="backgroundYoutubePlayer"></div>
+        <div id="backgroundYoutubePlayerUnVisibler ">&emsp;</div>
+        <div id="backgroundYoutubePlayer">&emsp;</div>
         <header>
           <img class="logo_img" src="/images/bpp_150_alpha.png"/>
         </header>
@@ -89,7 +82,7 @@ function App() {
           </section>
 
           <div class="samePlanets">
-            <canvas id="myCanvas"></canvas>
+            <canvas id="myCanvas">&emsp</canvas>
           </div>
 
           <section class="activity">
