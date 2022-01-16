@@ -13,31 +13,31 @@ function App() {
     <html class="bg_skew_border">
       <head>
         <title>BPP（用のサンプル）</title>
-        <meta name="viewport" content="width=device-width" />
-        <meta content="#6307c0" name="apple-mobile-web-app-status-bar-style" />
-        <meta content="#6307c0" name="msapplication-navbutton-color" />
-        <meta content="#6307c0" name="msapplication-TileColor" />
-        <meta content="________________________" name="description" />
-        <meta content="BPP" name="keywords" />
-        <meta property="og:type" content="WebSite" />
-        <meta property="og:image" content="" />
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="@_______" name="twitter:creator" />
+        <meta name="viewport" content="width=device-width"/>
+        <meta content="#6307c0" name="apple-mobile-web-app-status-bar-style"/>
+        <meta content="#6307c0" name="msapplication-navbutton-color"/>
+        <meta content="#6307c0" name="msapplication-TileColor"/>
+        <meta content="________________________" name="description"/>
+        <meta content="BPP" name="keywords"/>
+        <meta property="og:type" content="WebSite"/>
+        <meta property="og:image" content=""/>
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="@_______" name="twitter:creator"/>
         <script src="https://unpkg.com/three@0.131.3/build/three.min.js">
         </script>
         <script src="/scripts/threeExample.js"></script>
         <script src="/scripts/youtube.js"></script>
 
-        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js" />
-        <link rel="icon" href="/images/favicon.png" />
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
+        <link rel="icon" href="/images/favicon.png"/>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <link
           href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
           rel="stylesheet"
         />
-        <link href="/styles/style.css" rel="stylesheet" />
+        <link href="/styles/style.css" rel="stylesheet"/>
         <link
           href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap"
           rel="stylesheet"
@@ -48,11 +48,11 @@ function App() {
         <div id="backgroundYoutubePlayerUnVisibler "></div>
         <div id="backgroundYoutubePlayer"></div>
         <header>
-          <img class="logo_img" src="/images/bpp_150_alpha.png" />
+          <img class="logo_img" src="/images/bpp_150_alpha.png"/>
         </header>
 
         <main>
-          <section class="activity" style={"padding:unset; margin:unset;"}>
+          <section class="activity" style={ "padding:unset; margin:unset;" }>
             <h2>CELECTIALS</h2>
             <p>
               キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載
@@ -231,11 +231,11 @@ function App() {
           <section class="activity">
             <h2>BBPについて</h2>
             <p class="message">
-              ようこそ,Beautiful Planets Projectへ！ <br />
+              ようこそ,Beautiful Planets Projectへ！ <br/>
 
-              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br />
+              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
 
-              Blenderへの貢献を目的としてCG惑星100個を制作とNFTを公開を進めています。 <br />
+              Blenderへの貢献を目的としてCG惑星100個を制作とNFTを公開を進めています。 <br/>
 
               惑星は想像上、架空の惑星でOK！🪐惑星と思えれば良いので、ほとんどルールはありません。（一度うめちゃんがチェックは入れます）
 
@@ -245,16 +245,16 @@ function App() {
 
               Blenderに限らず、みんなが大好きなこと、得意なことを持ち寄って、新しいことやワクワクすることをやっていきたいです！✨
             </p>
-            <p class={"corporate_information"}>
+            <p class={ "corporate_information" }>
               <strong>私たちについて</strong>
-              <br />
-              ＊サンプル ようこそBeautifulPlanetsProjectへ<br />
+              <br/>
+              ＊サンプル ようこそBeautifulPlanetsProjectへ<br/>
 
-              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br />
-              私たちの目的はBlenderへの貢献。目的のためにCG惑星100個の制作とNFTとしてのを公開を進めています。 <br />
+              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
+              私たちの目的はBlenderへの貢献。目的のためにCG惑星100個の制作とNFTとしてのを公開を進めています。 <br/>
 
-              NFTの転売時に発生する料率から経費を差し引いた最終利益をETH建てでBlenderへの寄付を続けています。 <br />
-              透明性を持たせるためにハッシュの記録を検索し寄付毎に明細を自動で掲載していきます。 <br />
+              NFTの転売時に発生する料率から経費を差し引いた最終利益をETH建てでBlenderへの寄付を続けています。 <br/>
+              透明性を持たせるためにハッシュの記録を検索し寄付毎に明細を自動で掲載していきます。 <br/>
             </p>
           </section>
 
@@ -277,30 +277,30 @@ function App() {
 }
 
 async function handler(req) {
-  const { pathname } = new URL(req.url);
-  const pattern = new URLPattern({
-    pathname: "(/styles/|/images/|/scripts/):fileName",
-  });
-  const match = pattern.exec(req.url);
-  if (match) {
+  const { pathname } = new URL( req.url );
+  const pattern = new URLPattern( {
+    pathname: "(/styles/|/images/|/scripts/):fileName"
+  } );
+  const match = pattern.exec( req.url );
+  if ( match ) {
     const mimeList = {
       "/images/": "application/image",
       "/styles/": "text/css",
-      "/scripts/": "text/javascript",
+      "/scripts/": "text/javascript"
     };
-    const file = await Deno.readFile("./assets/" + pathname);
-    return new Response(file, {
-      headers: { "content-type": mimeList[match.pathname.groups[0]] },
-    });
+    const file = await Deno.readFile( "./assets/" + pathname );
+    return new Response( file, {
+      headers: { "content-type": mimeList[ match.pathname.groups[ 0 ] ] }
+    } );
   }
 
-  const html = renderSSR(<App />);
-  return new Response("<!DOCTYPE html>" + html, {
+  const html = renderSSR( <App/> );
+  return new Response( "<!DOCTYPE html>" + html, {
     headers: {
-      "content-type": "text/html; charset=utf-8",
-    },
-  });
+      "content-type": "text/html; charset=utf-8"
+    }
+  } );
 }
 
-console.log("Listening on http://localhost:8000");
-serve(handler);
+console.log( "Listening on http://localhost:8000" );
+serve( handler );
