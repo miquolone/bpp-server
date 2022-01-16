@@ -159,20 +159,18 @@ function App() {
           </section>
 
           <section>
-            <h2>コミュニティメンバ</h2>
+            <h2>BPPは誰でも入ることができます</h2>
             <div class="flex-center" style="padding:1rem;">
               <p class="memberIcon">
                 <img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" }/>
               </p>
             </div>
           </section>
-
           <section class="activity m0">
-            <h2>BBPについて</h2>
-            <p class="corporate_information message">
+            <div class="corporate_information message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
-              私たちは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
+              BPPは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
 
               Blenderへの貢献を目的としてCG惑星100個を制作とNFTを公開を進めています。 <br/>
 
