@@ -152,7 +152,7 @@ function App() {
           </section>
 
           <section>
-            <h2>BPPは友達を集めています</h2>
+            <h2 class={ "t_w" }>BPPは友達を集めています</h2>
             <div class="flex-center" style="padding:1rem;">
               <p class="memberIcon">
                 <img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" }/>
@@ -175,7 +175,7 @@ function App() {
 
               Blenderに限らず、みんなが大好きなこと、得意なことを持ち寄って、新しいことやワクワクすることをやっていきたいです！✨
 
-              <a class="link" href={ 'https://discord.com/channels/895078439709708318/895078442637336628' }> Discord で話しましょう </a>
+              <a class="t_w" href={ 'https://discord.com/channels/895078439709708318/895078442637336628' }> Discord で話しましょう </a>
 
             </div>
           </section>
