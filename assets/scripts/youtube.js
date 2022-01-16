@@ -27,7 +27,7 @@ function onYouTubeIframeAPIReady() {
 
 function onPlayerReady(event) {
   event.target.mute();
-  event.target.playVideo();
+  //event.target.playVideo();
 }
 
 function onPlayerHandle(event) {
@@ -43,7 +43,7 @@ function playMovie(play) {
   if ( play ) {
     player.hasOwnProperty( 'playVideo' ) && player.playVideo();
   } else {
-    player.stopVideo();
+    player.hasOwnProperty( 'stopVideo' ) && player.stopVideo();
   }
 }
 
