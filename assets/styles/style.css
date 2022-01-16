@@ -151,6 +151,10 @@ h2:before {
     border: 0.4rem solid #fff;
 }
 
+.memberIcon img {
+    width: 100%;
+}
+
 .message {
     border-radius: 1rem;
     margin: 3rem;
