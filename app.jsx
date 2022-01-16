@@ -38,8 +38,9 @@ function App() {
       </head>
 
       <body>
-        <div id="backgroundYoutubePlayerUnVisibler ">&emsp;</div>
-        <div id="backgroundYoutubePlayer">&emsp;</div>
+        <div id="backgroundYoutubePlayerUnVisibler ">
+          <div id="backgroundYoutubePlayer">&emsp;</div>
+        </div>
         <header>
           <img class="logo_img" src="/images/bpp_150_alpha.png"/>
         </header>
