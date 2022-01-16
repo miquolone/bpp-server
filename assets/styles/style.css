@@ -4,11 +4,11 @@ html {
     background: #000;
 }
 
+.link {
+    color: #fefefe;
+}
+
 .corporate_information {
-    margin: 3rem auto;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -16,6 +16,14 @@ html {
     align-items: center;
     padding: 0 2rem;
     box-sizing: border-box;
+}
+
+.message {
+    border-radius: 1rem;
+    padding: 1rem;
+    word-spacing: 5px;
+    background: #620ac0bf;
+    color: #fff;
 }
 
 .corporate_information strong {
@@ -72,9 +80,14 @@ html {
         border: 3px solid #888;
     }
 
+    .activity div {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
     .activity p {
-        width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 1rem auto;
     }
 }
 
@@ -110,7 +123,7 @@ body {
 }
 
 h2 {
-    padding: 3rem;
+    padding: 2rem 2rem 1rem;
     color: #620abf;
 }
 
@@ -156,16 +169,6 @@ h2:before {
 
 .memberIcon img {
     width: 100%;
-}
-
-.message {
-    border-radius: 1rem;
-    margin: 3rem;
-    padding: 1rem;
-    line-height: 1.8rem;
-    word-spacing: 5px;
-    background: #620ac0bf;
-    color: #fff;
 }
 
 .donationRecord {
