@@ -42,7 +42,9 @@ function App() {
           <div id="backgroundYoutubePlayer">&emsp;</div>
         </div>
         <header>
-          <img class="logo_img" src="/images/bpp_150_alpha.png"/>
+          <a href={ "/" }>
+            <img class="logo_img" src="/images/bpp_150_alpha.png"/>
+          </a>
         </header>
 
         <main>
