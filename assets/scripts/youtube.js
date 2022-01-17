@@ -13,9 +13,9 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
       loop: 1,
       rel: 0,
-      // seekTo: 58,
-      // start: 58,
-      // end: 60,
+      seekTo: 62,
+      start: 62,
+      end: 64,
       controls: 0
     },
     events: {
