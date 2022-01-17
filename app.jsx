@@ -155,7 +155,7 @@ function App() {
           </section>
 
           <section>
-            <h2 class={ "t_w" }>BPPは友達を集めています</h2>
+            <h2 class={ "t_w" }>BPPは友達を集めてるよ</h2>
             <div class="flex-center" style="padding:1rem;">
               <p class="memberIcon">
                 <img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" }/>
