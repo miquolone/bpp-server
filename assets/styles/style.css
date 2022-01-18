@@ -219,10 +219,11 @@ h2:before {
     left: 0;
     width: 2rem;
     margin-right: 1rem;
-    border-radius: 2rem;
+    border-radius: 4rem;
     font-size: 3rem;
-    background: #620abf url(/svg/circle.svg);
+    background: #620abf url(/svg/circle.svg) no-repeat;
     height: 2rem;
+    background-size: 3rem;
 }
 
 h2:after {
