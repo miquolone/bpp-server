@@ -216,11 +216,28 @@ h2 {
 }
 
 h2:before {
-    content: "_";
-    width: 1rem;
+    content: "■";
+    left: 0;
+    width: 2rem;
     margin-right: 1rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background: #620abf;
+    height: 2rem;
+}
+
+h2:after {
+    position: absolute;
+    left: 0;
+    top: 3rem;
+    content: "";
+    width: 3rem;
+    font-size: 3rem;
     background: #620abf;
     height: 1rem;
+    transform: rotate3d(0, 0, 1,
+    330deg
+    );
 }
 
 
