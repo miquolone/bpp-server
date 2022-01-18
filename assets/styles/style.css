@@ -190,9 +190,9 @@ main {
     position: relative;
     border-radius: 1rem;
     max-width: 1600px;
-    margin: 1rem auto 0;
+    margin: 1rem auto 10rem;
     line-height: 1.5rem;
-    box-shadow: 1px 1px 1px #000, 0 0 1px 0;
+    box-shadow: 1px 1px 1px #610bbf, 0 0 1px 0;
 }
 
 body {
