@@ -235,6 +235,7 @@ h2:after {
     background: #620abf;
     height: 1rem;
     transform: rotate3d(0, 0, 1, 335deg);
+    border-radius: 1rem;
 }
 
 
