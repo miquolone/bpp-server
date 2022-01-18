@@ -45,6 +45,7 @@ function App() {
         <div id="backgroundYoutubePlayerUnVisibler ">
           <div id="backgroundYoutubePlayer">&emsp;</div>
         </div>
+
         <header>
         </header>
 
@@ -185,6 +186,9 @@ function App() {
           </section>
 
         </main>
+        <footer>
+
+        </footer>
       </body>
     </html>
   );
