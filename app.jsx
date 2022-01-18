@@ -208,7 +208,7 @@ function App() {
 async function handler(req) {
   const { pathname } = new URL( req.url );
   const pattern = new URLPattern( {
-    pathname: "(/styles/|/images/|/scripts/):fileName"
+    pathname: "(/styles/|/images/|/scripts/|/svg/):fileName"
   } );
   const match = pattern.exec( req.url );
   if ( match ) {
