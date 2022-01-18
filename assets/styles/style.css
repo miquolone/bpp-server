@@ -4,6 +4,26 @@ html {
     background: #fff;
 }
 
+#youtubeWrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#youtubeWrapL {
+    position: fixed;
+    background: #620abfa1;
+    width: 200px;
+    height: 100vh;
+}
+
+#youtubeWrapR {
+    position: fixed;
+    background: #620abfa1;
+    width: 300px;
+    height: 100vh;
+}
+
 nav {
     height: 55px;
     background: #fff;
