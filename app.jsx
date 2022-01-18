@@ -42,10 +42,10 @@ function App() {
           <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
           <div> | HOME | STORE | SOCIALS |</div>
         </nav>
+        <div id="backgroundYoutubePlayerUnVisibler ">
+          <div id="backgroundYoutubePlayer">&emsp;</div>
+        </div>
         <header>
-          <div id="backgroundYoutubePlayerUnVisibler ">
-            <div id="backgroundYoutubePlayer">&emsp;</div>
-          </div>
         </header>
 
         <main>
