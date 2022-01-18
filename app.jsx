@@ -38,10 +38,11 @@ function App() {
       </head>
 
       <body>
+        <header>
+        <nav>&emsp;</nav>
         <div id="backgroundYoutubePlayerUnVisibler ">
           <div id="backgroundYoutubePlayer">&emsp;</div>
         </div>
-        <header>
           <a href={ "/" }>
             <img class="logo_img" src="/images/bpp_150_alpha.png"/>
           </a>
