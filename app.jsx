@@ -41,7 +41,7 @@ function App() {
         <header>
           <nav>&emsp;
             <a href={ "/" }>
-              <img className="logo_img" src="/images/bpp_150_alpha.png"/>
+              <img class="logo_img" src="/images/bpp_150_alpha.png"/>
             </a>
           </nav>
           <div id="backgroundYoutubePlayerUnVisibler ">
