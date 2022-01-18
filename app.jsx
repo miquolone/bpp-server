@@ -214,6 +214,7 @@ async function handler(req) {
   if ( match ) {
     const mimeList = {
       "/images/": "application/image",
+      "/svg/": "image/svg+xml",
       "/styles/": "text/css",
       "/scripts/": "text/javascript"
     };
