@@ -38,11 +38,11 @@ function App() {
       </head>
 
       <body>
+        <nav class="flex">
+          <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
+          <div> | HOME | STORE | SOCIALS |</div>
+        </nav>
         <header>
-          <nav class="flex">
-            <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
-            <div> | HOME | STORE | SOCIALS |</div>
-          </nav>
           <div id="backgroundYoutubePlayerUnVisibler ">
             <div id="backgroundYoutubePlayer">&emsp;</div>
           </div>
