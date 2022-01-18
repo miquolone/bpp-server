@@ -159,7 +159,6 @@ footer {
 @media all and (min-width: 2000px) {
     .activity {
         margin: 3rem -6rem;
-        border: 3px solid #888;
     }
 
     .activity div {
