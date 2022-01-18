@@ -17,8 +17,8 @@ nav {
     align-items: center;
     color: #620abf;
     font-weight: bold;
-
-    padding: 0 0.5rem;
+    padding-right: 3rem;
+    box-sizing: border-box;
 }
 
 .t_w {
