@@ -44,9 +44,15 @@ function App() {
         </nav>
         <div id="backgroundYoutubePlayerUnVisibler ">
           <div id="backgroundYoutubePlayer">&emsp;</div>
-          <div id={"youtubeWrap"}>
-            <div id="youtubeWrapR">&emsp</div>
-            <div id="youtubeWrapL">&emsp</div>
+          <div id="youtubeWrap">
+            <div id="youtubeWrapR">
+              <div class="wallUpper"></div>
+              <div class="wallUnder"></div>
+            </div>
+            <div id="youtubeWrapL">
+              <div class="wallUpper"></div>
+              <div class="wallUnder"></div>
+            </div>
           </div>
         </div>
 

@@ -8,18 +8,42 @@ html {
     display: flex;
 }
 
-#youtubeWrapL {
-    position: fixed;
+#youtubeWrapL .wallUpper {
+    position: absolute;
     background: #620abfa1;
     width: 200px;
     height: 100vh;
 }
 
+#youtubeWrapL .wallUnder {
+    position: absolute;
+    background: #620abfa1;
+    width: 300px;
+    height: 100vh;
+}
+
+#youtubeWrapL {
+    position: fixed;
+}
+
 #youtubeWrapR {
+    position: fixed;
+}
+
+#youtubeWrapR .wallUpper {
+    position: fixed;
+    background: #620abfa1;
+    width: 200px;
+    height: 100vh;
+    right: 0;
+}
+
+#youtubeWrapR .wallUnder {
     position: fixed;
     background: #620abfa1;
     width: 300px;
     height: 100vh;
+    right: 0;
 }
 
 nav {
