@@ -167,7 +167,7 @@ function App() {
             </div>
           </section>
 
-          <section>
+          <section class="memberActivity">
             <h2>BPPは友達を集めてるよ</h2>
             <div class="flex-center" style="padding:1rem;">
               <p class="memberIcon">
