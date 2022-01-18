@@ -184,10 +184,10 @@ function App() {
 
             </div>
           </section>
-
         </main>
-        <footer>
 
+        <footer>
+          &emsp;
         </footer>
       </body>
     </html>
