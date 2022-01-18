@@ -39,13 +39,14 @@ function App() {
 
       <body>
         <header>
-        <nav>&emsp;</nav>
-        <div id="backgroundYoutubePlayerUnVisibler ">
-          <div id="backgroundYoutubePlayer">&emsp;</div>
-        </div>
-          <a href={ "/" }>
-            <img class="logo_img" src="/images/bpp_150_alpha.png"/>
-          </a>
+          <nav>&emsp;
+            <a href={ "/" }>
+              <img className="logo_img" src="/images/bpp_150_alpha.png"/>
+            </a>
+          </nav>
+          <div id="backgroundYoutubePlayerUnVisibler ">
+            <div id="backgroundYoutubePlayer">&emsp;</div>
+          </div>
         </header>
 
         <main>
