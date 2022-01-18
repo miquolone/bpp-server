@@ -46,12 +46,12 @@ function App() {
           <div id="backgroundYoutubePlayer">&emsp;</div>
           <div id="youtubeWrap">
             <div id="youtubeWrapR">
-              <div class="wallUpper"></div>
-              <div class="wallUnder"></div>
+              <div class="wallUpper">&emsp;</div>
+              <div class="wallUnder">&emsp;</div>
             </div>
             <div id="youtubeWrapL">
-              <div class="wallUpper"></div>
-              <div class="wallUnder"></div>
+              <div class="wallUpper">&emsp;</div>
+              <div class="wallUnder">&emsp;</div>
             </div>
           </div>
         </div>
