@@ -190,7 +190,7 @@ footer {
 }
 
 main {
-    background: #000d;
+    background: #fffe;
     position: relative;
     border-radius: 1rem;
     max-width: 1600px;
@@ -200,7 +200,7 @@ main {
 }
 
 body {
-    background: #000;
+    background: #fff;
 }
 
 .headerMain {
@@ -216,28 +216,26 @@ h2 {
 }
 
 h2:before {
-    content: "■";
+    content: "●";
     left: 0;
     width: 2rem;
     margin-right: 1rem;
     border-radius: 2rem;
-    font-size: 2rem;
+    font-size: 3rem;
     background: #620abf;
     height: 2rem;
 }
 
 h2:after {
     position: absolute;
-    left: 0;
-    top: 3rem;
+    left: -0.5rem;
+    top: 3.3rem;
     content: "";
     width: 3rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     background: #620abf;
     height: 1rem;
-    transform: rotate3d(0, 0, 1,
-    330deg
-    );
+    transform: rotate3d(0, 0, 1, 335deg);
 }
 
 
