@@ -212,6 +212,7 @@ body {
 h2 {
     padding: 2rem 2rem 1rem;
     color: #620abf;
+    position: relative;
 }
 
 h2:before {
