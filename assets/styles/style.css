@@ -10,7 +10,7 @@ html {
 
 #youtubeWrapL .wallUpper {
     position: absolute;
-    background: #620abf21;
+    background: #620abf11;
     width: 200px;
     height: 100vh;
 }
@@ -19,9 +19,9 @@ html {
     position: absolute;
     width: 300px;
     height: 100vh;
-    background: url(http://localhost:8000/svg/cloud_perple.svg) no-repeat 87% -6%;
-    background-size: 124%;
-    margin: 50px 0 0 -5rem;
+
+    background: url(http://localhost:8000/svg/cloud_perple.svg) 120% -20%;
+    background-size: 150%;
 }
 
 #youtubeWrapL {
@@ -34,7 +34,7 @@ html {
 
 #youtubeWrapR .wallUpper {
     position: fixed;
-    background: #620abf21;
+    background: #620abf11;
     width: 200px;
     height: 100vh;
     right: 0;
@@ -45,9 +45,10 @@ html {
     width: 300px;
     height: 100vh;
     right: 0;
-    background: url(http://localhost:8000/svg/cloud_perple.svg) no-repeat 87% -6%;
-    background-size: 124%;
-    margin: 7px 0 0 72rem;
+    background: url(http://localhost:8000/svg/cloud_perple.svg) 88%;
+    background-size: cover;
+    transform: rotate3d(0, 0, 1, 180deg);
+    margin-top: -10rem;
 }
 
 nav {
