@@ -20,7 +20,7 @@ html {
     width: 300px;
     height: 100vh;
 
-    background: url(http://localhost:8000/svg/cloud_perple.svg) 120% -20%;
+    background: url(/svg/cloud_perple.svg) 120% -20%;
     background-size: 150%;
 }
 
@@ -45,7 +45,7 @@ html {
     width: 300px;
     height: 100vh;
     right: 0;
-    background: url(http://localhost:8000/svg/cloud_perple.svg) 88%;
+    background: url(/svg/cloud_perple.svg) 88%;
     background-size: cover;
     transform: rotate3d(0, 0, 1, 180deg);
     margin-top: -10rem;
