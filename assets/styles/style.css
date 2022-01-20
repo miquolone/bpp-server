@@ -20,7 +20,7 @@ html {
     position: absolute;
     width: 200px;
     height: 100vh;
-    background: url(/svg/cloud_white.svg) 70% 20% / cover repeat-y;
+    background: url(/svg/cloud_white.svg) 80% 20% / cover repeat-y;
 }
 
 #youtubeWrapL .wallUnder {
