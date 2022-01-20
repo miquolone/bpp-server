@@ -125,7 +125,7 @@ footer {
         border-radius: 1rem;
         max-width: 1600px;
         margin: 0 auto;
-        height: calc(100vw * 0.5625 - 8rem);
+        height: calc(100vw * 0.5625 - 1rem);
     }
 }
 
@@ -196,6 +196,7 @@ main {
     margin: 1rem auto 10rem;
     line-height: 1.5rem;
     box-shadow: 1px 1px 1px #610bbf, 0 0 1px 0;
+
 }
 
 body {
