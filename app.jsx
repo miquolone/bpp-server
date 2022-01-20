@@ -60,9 +60,7 @@ function App() {
         </header>
 
         <main>
-          <h2>Beautiful Planets Project. Who ar we ?</h2>
           <section class="activity" style={ "padding:unset; margin:unset;" }>
-            <h3>CELESTIALS</h3>
             <p>
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
