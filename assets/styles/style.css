@@ -186,7 +186,7 @@ footer {
     border-radius: 2rem;
     padding: 0 0.5rem 0 0;
     margin: 0.5rem;
-    border: 3px solid #610bbf;
+    border: 3px solid #620abf;
     width: calc(100vw * 0.2);
     max-width: 80px;
     background-blend-mode: color-burn;
@@ -199,7 +199,7 @@ main {
     max-width: 1600px;
     margin: 1rem auto 10rem;
     line-height: 1.5rem;
-    box-shadow: 1px 1px 1px #610bbf, 0 0 1px 0;
+    box-shadow: 1px 1px 1px #620abf, 0 0 1px 0;
 
 }
 
