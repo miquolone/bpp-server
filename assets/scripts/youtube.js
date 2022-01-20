@@ -1,4 +1,9 @@
-///document.addEventListener('visibilitychange', e => {console.log(e)}, false);
+// たとえば、開発中一番気になっているNOAで例えるよ。
+// Youtube動画の、https://www.youtube.com/watch?v=lgn6mIxvdco
+// https://www.youtube.com/watch?v=[ここの文字列] この場合は lgn6mIxvdco になるね。
+
+const VIDEOID = "eY58zNPsOJc";
+
 const tag = document.createElement( "script" );
 tag.src = "https://www.youtube.com/iframe_api";
 const firstScriptTag = document.getElementsByTagName( "script" )[ 0 ];
@@ -8,7 +13,7 @@ let player;
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player( "backgroundYoutubePlayer", {
-    videoId: "eY58zNPsOJc",
+    videoId: VIDEOID,
     playerVars: {
       playsinline: 1,
       loop: 1,
@@ -63,3 +68,5 @@ globalThis.addEventListener( "load", (event) => {
   observer.observe( document.querySelector( "header" ) );
 
 }, false );
+
+///document.addEventListener('visibilitychange', e => {console.log(e)}, false);
