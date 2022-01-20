@@ -26,6 +26,7 @@ function App() {
         <script src="https://unpkg.com/three@0.131.3/build/three.min.js"/>
         <script src="/scripts/threeExample.js"/>
         <script src="/scripts/youtube.js"/>
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
 
         <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
         <link rel="icon" href="/images/favicon.png"/>
@@ -61,6 +62,9 @@ function App() {
 
         <main>
           <section class="activity" style={ "padding:unset; margin:unset;" }>
+            <img class="star" src={ "/svg/star001w.svg" }/>
+
+            <img class="star" src={ "/svg/star001w.svg" }/>
             <p>
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
@@ -199,6 +203,7 @@ function App() {
 
         <footer>
           &emsp;
+          <script src="/scripts/palaraxBuilding.js"/>
         </footer>
       </body>
     </html>
