@@ -66,6 +66,10 @@ nav {
     box-sizing: border-box;
 }
 
+nav .link {
+    font-size: 0.8rem;
+}
+
 footer {
     box-shadow: 0 0 3px #eee;
     height: 55px;
