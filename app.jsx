@@ -40,7 +40,7 @@ function App() {
       <body>
         <nav class="flex">
           <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
-          <div class={"link"}> | HOME | STORE | SOCIALS |</div>
+          <div class={ "link" }> | HOME | STORE | SOCIALS |</div>
         </nav>
         <div id="backgroundYoutubePlayerUnVisibler ">
           <div id="backgroundYoutubePlayer">&emsp;</div>
@@ -67,6 +67,8 @@ function App() {
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
             </p>
             <div class="activity_contents">
+              <style>
+              </style>
               <nft-card
                 vertical
                 contractAddress="0x495f947276749ce646f68ac8c248420045cb7b5e"

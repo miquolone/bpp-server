@@ -256,7 +256,7 @@ h2:after {
 .activity_contents {
     width: 100%;
     box-sizing: border-box;
-    padding: 3rem;
+    padding: 0rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -290,4 +290,8 @@ h2:after {
     margin: 1rem;
     height: 3rem;
     background: #827;
+}
+
+nft-card {
+    overflow: hidden
 }
