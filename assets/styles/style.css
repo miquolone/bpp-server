@@ -8,21 +8,6 @@ html {
     display: flex;
 }
 
-#youtubeWrapL .wallUpper {
-    position: absolute;
-    background: #620abf11;
-    width: 200px;
-    height: 100vh;
-}
-
-#youtubeWrapL .wallUnder {
-    position: absolute;
-    width: 300px;
-    height: 100vh;
-
-    background: url(/svg/cloud_perple.svg) 90% / cover;
-}
-
 #youtubeWrapL {
     position: fixed;
 }
@@ -31,12 +16,26 @@ html {
     position: fixed;
 }
 
+#youtubeWrapL .wallUpper {
+    position: absolute;
+    width: 200px;
+    height: 100vh;
+    background: url(/svg/cloud_white.svg) 70% 20% / cover repeat-y;
+}
+
+#youtubeWrapL .wallUnder {
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    background: url(/svg/cloud_perple.svg) 90% / cover;
+}
+
 #youtubeWrapR .wallUpper {
     position: fixed;
-    background: #620abf11;
     width: 200px;
     height: 100vh;
     right: 0;
+    background: url(/svg/cloud_white.svg) 20% / cover;
 }
 
 #youtubeWrapR .wallUnder {
