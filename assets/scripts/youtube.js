@@ -18,8 +18,8 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
       loop: 1,
       rel: 0,
-      seekTo: 59,
-      start: 59,
+      seekTo: 57,
+      start: 57,
       end: 64,
       controls: 0
     },
