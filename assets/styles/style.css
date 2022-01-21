@@ -43,19 +43,19 @@ html {
 
 .hide {
     transition-property: opacity;
-    transition-duration: 2s, 3s;
+    transition-duration: 2s;
     opacity: 0;
 }
 
 .hide1s {
     transition-property: opacity;
-    transition-duration: 1s, 1s;
+    transition-duration: 1s;
     opacity: 0;
 }
 
 .hide5s {
     transition-property: opacity;
-    transition-duration: 5s, 5s;
+    transition-duration: 5s;
     opacity: 0;
 }
 
