@@ -297,3 +297,7 @@ h2:after {
 nft-card {
     overflow: hidden
 }
+
+.star {
+    width: 1rem;
+}

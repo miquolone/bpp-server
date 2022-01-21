@@ -206,6 +206,27 @@ function App() {
           <img class="star" src={ "/svg/star001w.svg" }/>
           <img class="star" src={ "/svg/star001w.svg" }/>
           <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
           &emsp;
           <script src="/scripts/palaraxBuilding.js"/>
         </footer>
