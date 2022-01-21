@@ -61,7 +61,7 @@ function App() {
         </header>
 
         <main>
-          <section class="activity" style={ "padding:unset; margin:unset;" }>
+          <section class="activity">
             <p>
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
