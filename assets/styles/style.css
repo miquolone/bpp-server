@@ -129,7 +129,6 @@ footer {
 @media all and (min-width: 380px) {
     header {
         border-radius: 1rem;
-        max-width: 1600px;
         margin: 0 auto;
         height: calc(100vw * 0.5625 - 1rem);
     }
@@ -138,7 +137,6 @@ footer {
 @media all and (max-width: 380px) {
     header {
         border-radius: 1rem;
-        max-width: 1600px;
         margin: 1rem auto;
         height: calc(100vw * 0.5625 - 2rem);
     }
