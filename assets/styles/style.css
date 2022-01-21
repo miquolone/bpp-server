@@ -309,7 +309,8 @@ nft-card {
     width: 1rem;
 }
 
-#overWallCover{
+#overWallCover {
+    top: 0;
     position: fixed;
     background: #620abf;
     height: 80rem;
