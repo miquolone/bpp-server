@@ -43,7 +43,7 @@ html {
 
 .hide {
     transition-property: opacity;
-    transition-duration: 2s;
+    transition-duration: 0.5s;
     opacity: 0;
 }
 
@@ -322,7 +322,7 @@ nft-card {
 }
 
 #overWallCover img {
-    transition-duration: 1s, 1s;
+    transition-duration: 1s;
     height: 100px;
     width: 100px;
     border: 5px solid #fff;
