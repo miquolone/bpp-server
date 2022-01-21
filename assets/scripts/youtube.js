@@ -2,7 +2,7 @@
 // Youtube動画の、https://www.youtube.com/watch?v=lgn6mIxvdco
 // https://www.youtube.com/watch?v=[ここの文字列] この場合は lgn6mIxvdco になるね。
 
-const VIDEOID = "86ysdmDYVzw";
+const VIDEOID = "eY58zNPsOJc";
 
 const tag = document.createElement( "script" );
 tag.src = "https://www.youtube.com/iframe_api";
@@ -18,8 +18,8 @@ function onYouTubeIframeAPIReady() {
       playsinline: 1,
       loop: 1,
       rel: 0,
-      seekTo: 0,
-      start: 0,
+      seekTo: 61,
+      start: 61,
       end: 64,
       controls: 0
     },
