@@ -3,7 +3,7 @@ globalThis.addEventListener( "load", function () {
 } );
 
 globalThis.addEventListener( "load", (event) => {
-  document.querySelector( '#overWallCover' ).classList.add( 'hide' );
+  document.querySelector( '#overWallCover' ).classList.add( 'hide1s' );
 
   const footer = document.querySelector( 'footer' );
   [ ...new Array( Math.floor( Math.PI * 10 ) ) ].map( _ => {

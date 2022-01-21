@@ -46,6 +46,11 @@ html {
     transition-duration: 2s, 3s;
     opacity: 0;
 }
+.hide1s {
+    transition-property: opacity;
+    transition-duration: 1s, 1s;
+    opacity: 0;
+}
 
 #youtubeWrapR .wallUnder {
     position: fixed;
