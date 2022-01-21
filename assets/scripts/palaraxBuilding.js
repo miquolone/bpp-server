@@ -1,10 +1,18 @@
 globalThis.addEventListener( "load", (event) => {
-  let list = document.querySelectorAll( '.star' );
-  list.forEach( node => {
+  const footer = document.querySelector( 'footer' );
+  [ ...new Array( Math.floor( Math.PI * 10 ) ) ].map( _ => {
+    const star = document.createElement( 'img' );
+    star.src = "/svg/star001w.svg";
+    star.classList.add( 'star' );
+    footer.append( star );
+  } );
+
+  let rand30 = Math.random() * 30;
+  document.querySelectorAll( '.star' ).forEach( node => {
     new simpleParallax( node, {
-      delay: Math.random() * 3,
-      orientation: 'down',
-      scale: Math.random() * 50,
+      delay: rand30,
+      orientation: [ 'down', 'up' ][ Math.round( Math.random( 1 ) ) ],
+      scale: Math.random() * 520,
       overflow: true
     } );
   } );
