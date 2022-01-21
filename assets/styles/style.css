@@ -41,6 +41,12 @@ html {
     background: url(/svg/cloud_white.svg) 20% / cover;
 }
 
+.hide {
+    transition-property: opacity;
+    transition-duration: 2s, 3s;
+    opacity: 0;
+}
+
 #youtubeWrapR .wallUnder {
     position: fixed;
     width: 300px;
