@@ -46,9 +46,16 @@ html {
     transition-duration: 2s, 3s;
     opacity: 0;
 }
+
 .hide1s {
     transition-property: opacity;
     transition-duration: 1s, 1s;
+    opacity: 0;
+}
+
+.hide5s {
+    transition-property: opacity;
+    transition-duration: 8s, 8s;
     opacity: 0;
 }
 
@@ -318,8 +325,18 @@ nft-card {
     top: 0;
     position: fixed;
     background: #620abf;
-    height: 80rem;
+    height: 100vh;
     width: 100%;
     z-index: 3;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
 
+#overWallCover img {
+    transition-duration: 1s, 1s;
+    height: 100px;
+    width: 100px;
+    border: 5px solid #fff;
+    border-radius: 5rem;
 }

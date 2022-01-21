@@ -39,7 +39,9 @@ function App() {
       </head>
 
       <body>
-        <div id="overWallCover">abc</div>
+        <div id="overWallCover">
+          <img src="https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240"/>
+        </div>
         <nav class="flex">
           <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
           <div class={ "link" }> | HOME | STORE | SOCIALS |</div>
