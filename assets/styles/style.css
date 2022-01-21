@@ -239,34 +239,18 @@ body {
 }
 
 h2 {
-    padding: 2rem 2rem 1rem;
+    padding: 2rem 1rem 1rem 4rem;
     color: #620abf;
     position: relative;
 }
 
 h2:before {
     content: "　";
-    left: 0;
-    width: 2rem;
-    margin-right: 1rem;
-    border-radius: 4rem;
-    font-size: 3rem;
-    background: #620abf url(/svg/circle.svg) no-repeat;
-    height: 2rem;
-    background-size: 3rem;
-}
-
-h2:after {
+    background: url(/svg/arm.svg) no-repeat -13% -5%/33% 18%;
+    width: 200px;
+    height: 300px;
     position: absolute;
-    left: -0.5rem;
-    top: 3.3rem;
-    content: "";
-    width: 3rem;
-    font-size: 3.5rem;
-    background: #620abf;
-    height: 1rem;
-    transform: rotate3d(0, 0, 1, 335deg);
-    border-radius: 1rem;
+    left: 0;
 }
 
 
