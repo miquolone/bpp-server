@@ -308,3 +308,12 @@ nft-card {
 .star {
     width: 1rem;
 }
+
+#overWallCover{
+    position: fixed;
+    background: #620abf;
+    height: 80rem;
+    width: 100%;
+    z-index: 1;
+
+}

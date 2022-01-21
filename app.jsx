@@ -39,6 +39,7 @@ function App() {
       </head>
 
       <body>
+        <div id="overWallCover">abc</div>
         <nav class="flex">
           <a href={ "/" }> <img class="logo_img" src="/images/bpp_150_alpha.png"/> </a>
           <div class={ "link" }> | HOME | STORE | SOCIALS |</div>

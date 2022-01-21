@@ -1,4 +1,9 @@
+globalThis.addEventListener( "load", function () {
+  console.log( 222 );
+} );
+
 globalThis.addEventListener( "load", (event) => {
+  document.querySelector( '#overWallCover' ).id = "loaed";
   const footer = document.querySelector( 'footer' );
   [ ...new Array( Math.floor( Math.PI * 10 ) ) ].map( _ => {
     const star = document.createElement( 'img' );
@@ -19,6 +24,6 @@ globalThis.addEventListener( "load", (event) => {
   document.querySelectorAll( [ '.wallUpper', '.wallUnder' ] ).forEach( wall => {
     setTimeout( () => {
       wall.classList.add( 'hide' );
-    }, Math.LOG10E * Math.random() * 30 * 80 );
+    }, Math.LOG10E * Math.random() * 30 * 10 );
   } );
 } );
