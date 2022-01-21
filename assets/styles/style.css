@@ -53,6 +53,12 @@ html {
     opacity: 0;
 }
 
+.hide2s {
+    transition-property: opacity;
+    transition-duration: 2s;
+    opacity: 0;
+}
+
 .hide5s {
     transition-property: opacity;
     transition-duration: 5s;
