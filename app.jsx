@@ -62,9 +62,6 @@ function App() {
 
         <main>
           <section class="activity" style={ "padding:unset; margin:unset;" }>
-            <img class="star" src={ "/svg/star001w.svg" }/>
-
-            <img class="star" src={ "/svg/star001w.svg" }/>
             <p>
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
               {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
@@ -202,6 +199,13 @@ function App() {
         </main>
 
         <footer>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
+          <img class="star" src={ "/svg/star001w.svg" }/>
           &emsp;
           <script src="/scripts/palaraxBuilding.js"/>
         </footer>
