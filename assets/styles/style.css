@@ -10,10 +10,13 @@ html {
 
 #youtubeWrapL {
     position: fixed;
+    z-index: 1;
 }
 
 #youtubeWrapR {
     position: fixed;
+    z-index: 2;
+
 }
 
 #youtubeWrapL .wallUpper {
