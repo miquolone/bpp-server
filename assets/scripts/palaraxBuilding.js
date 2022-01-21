@@ -3,7 +3,8 @@ globalThis.addEventListener( "load", function () {
 } );
 
 globalThis.addEventListener( "load", (event) => {
-  document.querySelector( '#overWallCover' ).id = "loaed";
+  document.querySelector( '#overWallCover' ).classList.add( 'hide' );
+
   const footer = document.querySelector( 'footer' );
   [ ...new Array( Math.floor( Math.PI * 10 ) ) ].map( _ => {
     const star = document.createElement( 'img' );
