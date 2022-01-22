@@ -23,19 +23,16 @@ function App() {
         <meta property="og:image" content=""/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="@_______" name="twitter:creator"/>
-        <script src="https://unpkg.com/three@0.131.3/build/three.min.js"/>
+        <script src="/build/three.min.js"/>
         <script src="/scripts/threeExample.js"/>
         <script src="/scripts/youtube.js"/>
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+        <script src="/build/simpleParallax.min.js"/>
 
-        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
+        <script src="/build/nft-card.min.js"/>
         <link rel="icon" href="/images/favicon.png"/>
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
-        <link href="/styles/style.css" rel="stylesheet"/>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"/>
       </head>
 
       <body>
