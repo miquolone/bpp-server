@@ -1,7 +1,3 @@
-globalThis.addEventListener( "load", function () {
-  console.log( 222 );
-} );
-
 globalThis.addEventListener( "load", (event) => {
   document.querySelector( '#overWallCover' )?.classList.add( 'hide' );
   document.querySelector( '#overWallCover img' )?.classList.add( 'hide1s' );
