@@ -214,7 +214,6 @@ function App() {
 
 async function handler(req) {
   const { pathname } = new URL( req.url );
-  console.log((new URL( req.url )));
   const type = pathname.match( new RegExp( /.*(\..*)/ ) );
 
   if ( type ) {
@@ -225,7 +224,6 @@ async function handler(req) {
       ".css": "text/css",
       ".js": "text/javascript"
     };
-    console.log( type );
     const file = await Deno.readFile( "./assets/" + pathname );
     console.log( mimeList[ type[ 1 ] ] );
     return new Response( file, {
