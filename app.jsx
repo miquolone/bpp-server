@@ -12,7 +12,7 @@ function App() {
   return (
     <html class="bg_skew_border">
       <head>
-        <title>BPP（用のサンプル）</title>
+        <title>BPP のWeb Ver2</title>
         <meta name="viewport" content="width=device-width"/>
         <meta content="#6307c0" name="apple-mobile-web-app-status-bar-style"/>
         <meta content="#6307c0" name="msapplication-navbutton-color"/>
@@ -23,13 +23,18 @@ function App() {
         <meta property="og:image" content=""/>
         <meta content="summary_large_image" name="twitter:card"/>
         <meta content="@_______" name="twitter:creator"/>
-        <script src="/build/three.min.js"/>
+        <script src="https://unpkg.com/three@0.131.3/build/three.min.js"/>
+        <script src="https://unpkg.com/embeddable-nfts/dist/nft-card.min.js"/>
+
+        <script src="/libs/simpleParallax.min.js"/>
         <script src="/scripts/threeExample.js"/>
         <script src="/scripts/youtube.js"/>
-        <script src="/build/simpleParallax.min.js"/>
 
-        <script src="/build/nft-card.min.js"/>
         <link rel="icon" href="/images/favicon.png"/>
+        <link href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet"/>
+        <link href="/styles/style.css" rel="stylesheet"/>
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -209,20 +214,21 @@ function App() {
 
 async function handler(req) {
   const { pathname } = new URL( req.url );
-  const pattern = new URLPattern( {
-    pathname: "(/styles/|/images/|/scripts/|/svg/):fileName"
-  } );
-  const match = pattern.exec( req.url );
-  if ( match ) {
+  const type = req.url.match( new RegExp( /.*(\..*)/ ) );
+
+  if ( type ) {
     const mimeList = {
-      "/images/": "application/image",
-      "/svg/": "image/svg+xml",
-      "/styles/": "text/css",
-      "/scripts/": "text/javascript"
+      ".png": "application/image",
+      ".ico": "application/image",
+      ".svg": "image/svg+xml",
+      ".css": "text/css",
+      ".js": "text/javascript"
     };
+    console.log( type );
     const file = await Deno.readFile( "./assets/" + pathname );
+    console.log( mimeList[ type[ 1 ] ] );
     return new Response( file, {
-      headers: { "content-type": mimeList[ match.pathname.groups[ 0 ] ] }
+      headers: { "content-type": mimeList[ type[ 1 ] ] }
     } );
   }
 
