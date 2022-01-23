@@ -214,7 +214,8 @@ function App() {
 
 async function handler(req) {
   const { pathname } = new URL( req.url );
-  const type = req.url.match( new RegExp( /.*(\..*)/ ) );
+  console.log((new URL( req.url )));
+  const type = pathname.match( new RegExp( /.*(\..*)/ ) );
 
   if ( type ) {
     const mimeList = {
