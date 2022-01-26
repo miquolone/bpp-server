@@ -1,4 +1,4 @@
-import React from "https://dev.jspm.io/react";
+import {React,ReactDOMServer,BrowserRouter} from "./dep.ts";
 
 const openSea = {
     nft: {
