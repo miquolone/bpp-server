@@ -5,7 +5,7 @@ import React from "https://jspm.dev/react";
 const app = new Application();
 const router = new Router();
 
-router.get("/", function (context) {
+router.get("/", (context) => {
     context.response.body = ReactDOMServer.renderToString(
         <html className="bg_skew_border">
             a
