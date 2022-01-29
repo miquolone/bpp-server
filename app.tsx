@@ -77,7 +77,7 @@ app.use(async (ctx, next) => {
     const rt = ctx.response.headers.get("X-Response-Time");
     console.log(`${ctx.request.method} ${ctx.request.url} - ${rt}`);
 });
-// Timing
+
 app.use(async (ctx, next) => {
     const start = Date.now();
     await next();
@@ -85,22 +85,18 @@ app.use(async (ctx, next) => {
     ctx.response.headers.set("X-Response-Time", `${ms}ms`);
 });
 
-// Hello World!
-app.use((ctx) => {
-    ctx.response.body = "Hello World!";
-    next();
-});
 router.get("/", (context) => {
     context.response.body = ReactDOMServer.renderToString(
         <BPP title="bpp">
             <Main/>
         </BPP>
     );
-// }).get("/image", () => {
+}).get("/image", (ctx) => {
+    ctx.response.body = "Hello World!";
+
 // }).get("/shop/:id", (context) => {
 //     if (context?.params?.id) {
 //         context.response.body = context.params.id;
-//     }
 });
 
 app.use(router.routes());
