@@ -86,13 +86,8 @@ app.use(async (ctx, next) => {
 });
 
 router.get("/", (context) => {
-    context.response.body = ReactDOMServer.renderToString(
-        <BPP title="bpp">
-            aaa
-        </BPP>
-    );
-}).get("/image", (ctx) => {
     ctx.response.body = "Hello World!";
+}).get("/image", (ctx) => {
 
 // }).get("/shop/:id", (context) => {
 //     if (context?.params?.id) {
