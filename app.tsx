@@ -78,21 +78,21 @@ router.get("/", (context) => {
             <Main/>
         </BPP>
     );
-// }).get("/image", () => {
-// }).get("/shop/:id", (context) => {
-//     if (context?.params?.id) {
-//         context.response.body = context.params.id;
-//     }
+}).get("/image", () => {
+}).get("/shop/:id", (context) => {
+    if (context?.params?.id) {
+        context.response.body = context.params.id;
+    }
 });
 
 app.use(router.routes());
 app.use(router.allowedMethods());
-// app.use(async (context) => {
-//     const {pathname} = new URL(context.request.url);
-//     await send(context, "./assets/" + pathname, {
-//         root: `${Deno.cwd()}/`,
-//     });
-// })
+app.use(async (context) => {
+    const {pathname} = new URL(context.request.url);
+    await send(context, "./assets/" + pathname, {
+        root: `${Deno.cwd()}/`,
+    });
+})
 
 await app.listen({port: 8000});
 console.log("Listening on http://localhost:8000");
