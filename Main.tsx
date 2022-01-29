@@ -1,4 +1,4 @@
-import {React, ReactDOMServer, BrowserRouter} from "./dep.ts";
+import {React,ReactDOMServer,BrowserRouter} from "./dep.ts";
 
 import OpenSeaPlanets from "./OpenSeaPlanets.tsx";
 import OpenSeaCharacter from "./OpenSeaCharacter.tsx";

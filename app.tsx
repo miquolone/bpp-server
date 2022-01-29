@@ -88,7 +88,7 @@ app.use(async (ctx, next) => {
 router.get("/", (context) => {
     context.response.body = ReactDOMServer.renderToString(
         <BPP title="bpp">
-            aaa
+            <Main/>
         </BPP>
     );
 }).get("/image", (ctx) => {
@@ -100,7 +100,7 @@ router.get("/", (context) => {
 });
 
 app.use(router.routes());
-// app.use(router.allowedMethods());
+app.use(router.allowedMethods());
 // app.use(async (context) => {
 //     const {pathname} = new URL(context.request.url);
 //     await send(context, "./assets/" + pathname, {

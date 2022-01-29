@@ -1,4 +1,4 @@
-import {React, ReactDOMServer, BrowserRouter} from "./dep.ts";
+import {React,ReactDOMServer,BrowserRouter} from "./dep.ts";
 
 const openSea = {
     nft: {
