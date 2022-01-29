@@ -87,15 +87,19 @@ app.use(async (ctx, next) => {
 
 // Hello World!
 app.use((ctx) => {
-    ctx.response.body = "Hello World!";
-    next();
+   // ctx.response.body = "Hello World!";
 });
 router.get("/", (context) => {
+    try{
     context.response.body = ReactDOMServer.renderToString(
         <BPP title="bpp">
             <Main/>
         </BPP>
     );
+    } catch (e){
+        ctx.response.body = "Hello World!";
+
+    }
 // }).get("/image", () => {
 // }).get("/shop/:id", (context) => {
 //     if (context?.params?.id) {
