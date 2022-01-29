@@ -46,9 +46,10 @@ html {
 }
 
 .hide {
-    transition-property: opacity;
-    transition-duration: 0.5s;
+    transition-property: opacity, visibility;
+    utransition-duration: 0.5s, 0.3s;
     opacity: 0;
+    visibility: hidden;
 }
 
 .hide1s {
@@ -223,6 +224,7 @@ footer {
 }
 
 main {
+    z-index: 2;
     background: #fff;
     position: relative;
     border-radius: 1rem;
