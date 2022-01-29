@@ -86,9 +86,11 @@ app.use(async (ctx, next) => {
 });
 
 // Hello World!
-// app.use((ctx) => {
-//     ctx.response.body = "Hello World!";
-// });
+app.use((ctx) => {
+    ctx.response.body = "Hello World!";
+});
+
+
 router.get("/", (context) => {
     context.response.body = ReactDOMServer.renderToString(
         <BPP title="bpp">
