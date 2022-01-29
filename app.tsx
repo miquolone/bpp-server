@@ -1,8 +1,6 @@
-import {Application, send, Router} from "https://deno.land/x/oak/mod.ts";
-import {React } from "./dep.ts";
+import {Application, Router} from "https://deno.land/x/oak/mod.ts";
 import ReactDOMServer from "https://jspm.dev/react-dom/server";
-
-import Main from "./Main.tsx";
+import React from "https://jspm.dev/react";
 
 const BPP: React.FC<{ title: string }> = ({title, children}) => (
     <html className="bg_skew_border">
