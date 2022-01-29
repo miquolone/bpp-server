@@ -72,18 +72,18 @@ const BPP: React.FC<{ title: string }> = ({title, children}) => (
 
 const app = new Application();
 const router = new Router();
-router.get("/", (context) => {
-    context.response.body = ReactDOMServer.renderToString(
-        <BPP title="bpp">
-            <Main/>
-        </BPP>
-    );
+// router.get("/", (context) => {
+//     context.response.body = ReactDOMServer.renderToString(
+//         <BPP title="bpp">
+//             <Main/>
+//         </BPP>
+//     );
 // }).get("/image", () => {
 // }).get("/shop/:id", (context) => {
 //     if (context?.params?.id) {
 //         context.response.body = context.params.id;
 //     }
-});
+// });
 
 app.use(router.routes());
 app.use(router.allowedMethods());
