@@ -86,7 +86,7 @@ app.use(async (ctx, next) => {
 });
 
 router.get("/", (context) => {
-    context.response.body = "Hello World!";
+    ctx.response.body = "Hello World!";
 }).get("/image", (ctx) => {
 
 // }).get("/shop/:id", (context) => {
