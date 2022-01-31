@@ -230,6 +230,10 @@ async function HTTPRequestHandler(req) {
       ".js": "text/javascript"
     };
     console.log( "1111", pathname );
+    if ( pathname == "/favicon.ico" ) {
+      pathname = "/favicon.png";
+
+    }
     const file = await Deno.readFile( "./assets/" + pathname );
 
     console.log( "2222", pathname );
