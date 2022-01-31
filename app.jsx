@@ -234,7 +234,7 @@ async function HTTPRequestHandler(req) {
         headers: { "content-type": mimeList[ extension ] }
       } );
     } catch ( e ) {
-      console.log( 'おやや？', e );
+      console.log( 'おやや？' );
     }
   }
 
