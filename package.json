@@ -19,5 +19,8 @@
   "dependencies": {
     "create-react-app": "^5.0.0",
     "react-scripts": "^5.0.0"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
   }
 }
