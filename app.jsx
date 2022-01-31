@@ -1,4 +1,4 @@
-import { serve } from "https://deno.land/std@0.122.0/http/server.ts";
+import { serve } from "https://deno.land/std@0.120.0/http/server.ts";
 import React from "https://dev.jspm.io/react";
 import ReactDOMServer from "https://dev.jspm.io/react-dom/server";
 
@@ -216,7 +216,7 @@ const Main = () => {
 };
 
 /* @ts-ignore */
-async function HTTPRequestHandler(req) {
+async function HTTPRequestHandler(req: Request): Response {
   const mimeList = {
     ".png": "application/image",
     ".ico": "application/image",
@@ -224,25 +224,26 @@ async function HTTPRequestHandler(req) {
     ".css": "text/css",
     ".js": "text/javascript"
   };
-  if(req.url){
-  const { pathname } = new URL( req.url );
-  const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
-  if ( patternResolve ) {
-    const [ , extension ] = patternResolve;
-    console.log( patternResolve );
-    console.log( req.url );
-    console.log( "1111", pathname );
-    const file = await Deno.readFile( "./assets/" + pathname );
+  if ( req.url ) {
+    const { pathname } = new URL( req.url );
+    const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
+    if ( patternResolve ) {
+      const [ , extension ] = patternResolve;
+      console.log( patternResolve );
+      console.log( req.url );
+      console.log( "1111", pathname );
+      const file = await Deno.readFile( "./assets/" + pathname );
 
-    console.log( "2222", pathname );
-    try {
-      return new Response( file, {
-        headers: { "content-type": mimeList[ extension ] }
-      } );
-    } catch ( e ) {
-      console.log( 'おやや？', e );
+      console.log( "2222", pathname );
+      try {
+        return new Response( file, {
+          headers: { "content-type": mimeList[ extension ] }
+        } );
+      } catch ( e ) {
+        console.log( 'おやや？', e );
+      }
     }
-  }}
+  }
 
   const html = ReactDOMServer.renderToString( <BPP title="bpp"><Main/></BPP> );
   return new Response( html, {
@@ -251,4 +252,4 @@ async function HTTPRequestHandler(req) {
 }
 
 console.log( "Listening on http://localhost:8000" );
-serve( HTTPRequestHandler );
+await serve( HTTPRequestHandler );
