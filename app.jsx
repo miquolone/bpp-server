@@ -229,13 +229,13 @@ async function HTTPRequestHandler(req) {
       ".css": "text/css",
       ".js": "text/javascript"
     };
-    const file = await Deno.readFile( "./assets/" + pathname );
-    console.log( pathname );
     try {
+      const file = await Deno.readFile( "./assets/" + pathname );
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
       } );
     } catch ( e ) {
+      console.log( pathname );
       console.log( 'おやや？', e );
     }
   }
