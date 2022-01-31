@@ -229,9 +229,9 @@ async function HTTPRequestHandler(req) {
       ".css": "text/css",
       ".js": "text/javascript"
     };
-    const file = await Deno.readFile( "./assets/" + pathname );
-    console.log( pathname );
     try {
+      const file = await Deno.readFile( "./assets/" + pathname );
+      console.log( pathname );
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
       } );
