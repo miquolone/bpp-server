@@ -1,7 +1,6 @@
 import { serve } from "https://deno.land/std@0.122.0/http/server.ts";
 import React from "https://dev.jspm.io/react";
 import ReactDOMServer from "https://dev.jspm.io/react-dom/server";
-import * as path from 'path';
 
 const openSea = {
   nft: {
@@ -229,14 +228,9 @@ async function HTTPRequestHandler(req) {
       ".css": "text/css",
       ".js": "text/javascript"
     };
-    console.log( "1111", pathname );
-    if ( pathname == "/favicon.ico" ) {
-      pathname = "/favicon.png";
-
-    }
+    console.log( "1111",pathname );
     const file = await Deno.readFile( "./assets/" + pathname );
-
-    console.log( "2222", pathname );
+    console.log( "2222",pathname );
     try {
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
