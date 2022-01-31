@@ -231,6 +231,8 @@ async function HTTPRequestHandler(req) {
     try {
       const file = await Deno.readFile( "./assets/" + pathname );
       return new Response( file, {
+
+        /* @ts-ignore */
         headers: { "content-type": mimeList[ extension ] }
       } );
     } catch ( e ) {
@@ -238,6 +240,7 @@ async function HTTPRequestHandler(req) {
     }
   }
 
+  /* @ts-ignore */
   const html = ReactDOMServer.renderToString( <BPP title="bpp"><Main/></BPP> );
   return new Response( html, {
     headers: { "content-type": "text/html; charset=utf-8" }
