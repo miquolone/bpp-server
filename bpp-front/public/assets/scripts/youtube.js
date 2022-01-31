@@ -1,7 +1,3 @@
-// たとえば、開発中一番気になっているNOAで例えるよ。
-// Youtube動画の、https://www.youtube.com/watch?v=lgn6mIxvdco
-// https://www.youtube.com/watch?v=[ここの文字列] この場合は lgn6mIxvdco になるね。
-
 const VIDEOID = "86ysdmDYVzw";
 
 const tag = document.createElement( "script" );
@@ -10,6 +6,8 @@ const firstScriptTag = document.getElementsByTagName( "script" )[ 0 ];
 firstScriptTag.parentNode.insertBefore( tag, firstScriptTag );
 
 let player;
+
+console.log( "[+] youtube init" );
 
 function onYouTubeIframeAPIReady() {
   player = new YT.Player( "backgroundYoutubePlayer", {
@@ -56,7 +54,9 @@ function playMovie(play) {
   }
 }
 
-globalThis.addEventListener( "load", (event) => {
+window.addEventListener( "load", (event) => {
+
+  console.log( "[+] loaded movie observer start" );
 
   function intersectionCallback(entries) {
     entries.forEach( entry => {
