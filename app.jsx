@@ -222,7 +222,6 @@ async function HTTPRequestHandler(req) {
   if ( patternResolve ) {
     const [ , extension ] = patternResolve;
     console.log(patternResolve);
-    console.log(req.url);
     const mimeList = {
       ".png": "application/image",
       ".ico": "application/image",
