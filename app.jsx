@@ -231,7 +231,7 @@ async function HTTPRequestHandler(req) {
     };
     try {
       const file = await Deno.readFile( "./assets/" + pathname );
-      console.log( pathname );
+      console.log( 1);
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
       } );
