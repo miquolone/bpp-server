@@ -217,19 +217,19 @@ const Main = () => {
 
 /* @ts-ignore */
 async function HTTPRequestHandler(req) {
-  const mimeList = {
-    ".png": "application/image",
-    ".ico": "application/image",
-    ".svg": "image/svg+xml",
-    ".css": "text/css",
-    ".js": "text/javascript"
-  };
   const { pathname } = new URL( req.url );
   const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
   if ( patternResolve ) {
     const [ , extension ] = patternResolve;
-    console.log( patternResolve );
-    console.log( req.url );
+    console.log(patternResolve);
+    console.log(req.url);
+    const mimeList = {
+      ".png": "application/image",
+      ".ico": "application/image",
+      ".svg": "image/svg+xml",
+      ".css": "text/css",
+      ".js": "text/javascript"
+    };
     console.log( "1111", pathname );
     const file = await Deno.readFile( "./assets/" + pathname );
 
