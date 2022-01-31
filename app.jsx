@@ -221,7 +221,6 @@ async function HTTPRequestHandler(req) {
   const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
   if ( patternResolve ) {
     const [ , extension ] = patternResolve;
-    console.log(patternResolve);
     const mimeList = {
       ".png": "application/image",
       ".ico": "application/image",
