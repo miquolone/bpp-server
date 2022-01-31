@@ -25,9 +25,6 @@ const openSea = {
 const OpenSeaPlanets = () => {
   const [ nftPlanets ] = React.useState( openSea );
 
-  React.useEffect( () => {
-  }, [] );
-
   return (
     <section className="activity">
       <h2>Planets</h2>
