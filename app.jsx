@@ -224,7 +224,6 @@ async function HTTPRequestHandler(req) {
     ".css": "text/css",
     ".js": "text/javascript"
   };
-  if(req.url){
   const { pathname } = new URL( req.url );
   const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
   if ( patternResolve ) {
@@ -242,7 +241,7 @@ async function HTTPRequestHandler(req) {
     } catch ( e ) {
       console.log( 'おやや？', e );
     }
-  }}
+  }
 
   const html = ReactDOMServer.renderToString( <BPP title="bpp"><Main/></BPP> );
   return new Response( html, {
