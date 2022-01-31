@@ -122,6 +122,7 @@ const BPP = ({ title, children }) => (
 
       <script src="/libs/simpleParallax.min.js"/>
       <script src="/scripts/threeExample.js"/>
+      <script src="/scripts/palaraxBuilding.js"/>
       <script src="/scripts/youtube.js"/>
 
       <link rel="icon" href="/images/favicon.png"/>
@@ -209,7 +210,6 @@ const Main = () => {
 
       <footer>
         &emsp;
-        <script src="/scripts/palaraxBuilding.js"/>
       </footer>
     </>
   );
@@ -228,9 +228,10 @@ async function HTTPRequestHandler(req) {
       ".css": "text/css",
       ".js": "text/javascript"
     };
+    console.log( "1111",pathname );
+    const file = await Deno.readFile( "./assets/" + pathname );
+    console.log( "2222",pathname );
     try {
-      const file = await Deno.readFile( "./assets/" + pathname );
-      console.log( pathname );
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
       } );
