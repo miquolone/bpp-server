@@ -1,7 +1,6 @@
 import { serve } from "https://deno.land/std@0.122.0/http/server.ts";
 import React from "https://dev.jspm.io/react";
 import ReactDOMServer from "https://dev.jspm.io/react-dom/server";
-import * as path from 'path';
 
 const openSea = {
   nft: {
