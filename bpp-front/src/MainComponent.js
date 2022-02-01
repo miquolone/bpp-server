@@ -53,7 +53,6 @@ const MainComponent = () => {
 
       <footer>
         &emsp;
-        <script src="https://bpp.deno.dev/scripts/palaraxBuilding.js"/>
       </footer>
     </>
   );
