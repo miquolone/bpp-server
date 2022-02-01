@@ -33,7 +33,9 @@ const MainComponent = () => {
         </div>
       </div>
 
-      <header>&emsp;</header>
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
 
