@@ -356,3 +356,26 @@ nft-card {
     background-size: cover;
     background-position: 50% 50%;
 }
+
+
+.gandam {
+    height: 500px;
+    width: 100%;
+    transition: 3s;
+    transform: rotate(180deg);
+}
+
+.gandam-transform {
+    transition: 3s;
+    display: block;
+    background: url('/assets/svg/gandam.svg');
+    height: 500px;
+    width: 100%;
+    transform-origin: 12% 16% 0%;
+    transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);
+
+    perspective: 1053px;
+    transform-style: preserve-3d;
+    perspective-origin: 11% 10%;
+
+}

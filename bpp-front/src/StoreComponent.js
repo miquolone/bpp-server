@@ -1,10 +1,20 @@
 import OpenSeaCharacter from './OpenSeaCharacter';
 import OpenSeaPlanets from './OpenSeaPlanets';
+import { useEffect, useState } from 'react';
 
 const StoreComponent = () => {
+  const [ gandamClassName, setGandamClassName ] = useState( "gandam" );
+
+  useEffect( () => {
+    const timer = setTimeout( () => {
+      setGandamClassName( 'gandam-transform' );
+      console.log( 'Initial timeout!' );
+    }, 10 );
+  }, [] );
+
   return (
     <>
-      <p>STORE</p>
+      <div className={ gandamClassName }/>
       <OpenSeaCharacter/>
 
       <div className="samePlanets">
