@@ -13,7 +13,7 @@ function Home() {
         <div className={ "link" }>
           |<Link to={ "/" }>HOME </Link>
           |<Link to={ "/STORE" }>STORE </Link>
-          |<Link to={ "/SOCIALS " }>SOCIALS </Link> |
+          |<Link to={ "/SOCIAL " }>SOCIAL </Link> |
         </div>
       </nav>
 

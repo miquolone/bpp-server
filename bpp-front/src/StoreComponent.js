@@ -6,7 +6,7 @@ const StoreComponent = () => {
   const [ gandamClassName, setGandamClassName ] = useState( "gandam" );
 
   useEffect( () => {
-    const timer = setTimeout( () => {
+    setTimeout( () => {
       setGandamClassName( 'gandam-transform' );
       console.log( 'Initial timeout!' );
     }, 10 );
