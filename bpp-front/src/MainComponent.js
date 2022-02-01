@@ -1,7 +1,3 @@
-import OpenSeaCharacter from './OpenSeaCharacter';
-import OpenSeaPlanets from './OpenSeaPlanets';
-import { Link } from "react-router-dom";
-
 const MainComponent = () => {
   return (
     <>
