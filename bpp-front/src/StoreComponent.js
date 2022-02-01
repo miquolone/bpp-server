@@ -1,7 +1,7 @@
 import OpenSeaCharacter from './OpenSeaCharacter';
 import OpenSeaPlanets from './OpenSeaPlanets';
 
-const ShopComponent = () => {
+const StoreComponent = () => {
   return (
     <>
       <p>STORE</p>
@@ -17,4 +17,4 @@ const ShopComponent = () => {
   );
 };
 
-export default ShopComponent;
+export default StoreComponent;
