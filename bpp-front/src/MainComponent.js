@@ -1,9 +1,53 @@
+import { useEffect } from 'react';
+import YouTube from 'react-youtube';
+
 const MainComponent = () => {
+
+  useEffect( () => {
+  }, [] );
+
+  const VIDEOID = "86ysdmDYVzw";
+
+  const opts = {
+    playerVars: {
+      playsinline: 1,
+      loop: 1,
+      rel: 0,
+      seekTo: 0,
+      start: 0,
+      end: 64,
+      controls: 0
+    }
+  };
+
+  function onPlayerReady(event) {
+    event.target.mute();
+    event.target.playVideo();
+  }
+
+  function onPlayerHandle(event) {
+    if ( event.target.getPlayerState() === 0 ) {
+      event.target.mute();
+      event.target.playVideo();
+    }
+  }
+
   return (
     <>
-
       <div id="backgroundYoutubePlayerUnVisibler ">
-        <div id="backgroundYoutubePlayer">&emsp;</div>
+        <div id="backgroundYoutubePlayer">&emsp;
+          <YouTube
+            videoId={ VIDEOID }
+            id={ 'backgroundYoutubePlayer' }
+            // containerClassName={ string }
+            opts={ opts }
+            onReady={ onPlayerReady }
+            onPlay={ () => {console.log( 'playing' );} }
+            onPause={ () => {console.log( 'pause' );} }
+            onEnd={ onPlayerHandle }
+            onStateChange={ onPlayerReady }
+          />
+        </div>
         <div id="youtubeWrap">
           <div id="youtubeWrapR">
             <div className="wallUpper">&emsp;</div>
