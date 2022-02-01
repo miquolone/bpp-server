@@ -16,6 +16,7 @@ function Home() {
           |<Link to={ "/SOCIALS " }>SOCIALS </Link> |
         </div>
       </nav>
+
       <Outlet/>
     </>
   );
