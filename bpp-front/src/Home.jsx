@@ -12,7 +12,7 @@ function Home() {
         <a href={ "/" }> <img className="logo_img" src="/assets/images/bpp_150_alpha.png" alt={ "" }/> </a>
         <div className={ "link" }>
           |<Link to={ "/" }>HOME </Link>
-          |<Link to={ "/SHOP" }>STORE </Link>
+          |<Link to={ "/STORE" }>STORE </Link>
           |<Link to={ "/SOCIALS " }>SOCIALS </Link> |
         </div>
       </nav>
