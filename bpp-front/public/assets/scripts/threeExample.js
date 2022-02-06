@@ -17,7 +17,10 @@ function init() {
   const geometry = new THREE.BoxGeometry( 400, 400, 400 );
   const material = new THREE.MeshNormalMaterial();
   const box = new THREE.Mesh( geometry, material );
+  box.material.transparent = true;
+  box.material.opacity = 0.2;
   scene.add( box );
+
   tick();
 
   function tick() {

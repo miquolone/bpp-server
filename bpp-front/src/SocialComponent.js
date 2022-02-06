@@ -16,16 +16,14 @@ const SocialComponent = () => {
 
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">S.O.C.I.A.L</p>
+        <p className="circleRotateClassWrapInnterText">
+          <div className="samePlanets">
+            <canvas id="myCanvas">&emsp</canvas>
+          </div>
+          S.O.C.I.A.L
+        </p>
       </aside>
 
-      <div className="samePlanets">
-        <canvas id="myCanvas">&emsp</canvas>
-      </div>
-
-      <div className="samePlanets">
-        <canvas id="myCanvas">&emsp</canvas>
-      </div>
 
       <div className="flex-center">
         <p className="memberIcon">
