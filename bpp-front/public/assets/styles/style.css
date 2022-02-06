@@ -351,15 +351,25 @@ nft-card {
 }
 
 .gandam-transform {
-    transition: 1.5s 0.1s;
     background: url('/assets/svg/gandam.svg') no-repeat;
     height: 250px;
     width: 250px;
     transform-origin: 50% 50%;
-    transform: scale(9) rotateZ(-150deg);
     perspective: 100px;
-    /*transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);*/
+    animation: kurukuru_phase2 30s linear 0.1s infinite;
     transform-style: preserve-3d;
     perspective-origin: 10% 10%;
-
 }
+
+/*transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);*/
+
+@keyframes kurukuru_phase2 {
+    from {
+        transform: scale(5)
+    }
+
+    to {
+        transform: scale(5) rotateZ(-179deg);
+    }
+}
+
