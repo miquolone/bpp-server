@@ -5,6 +5,7 @@ import Home from './Home';
 import MainComponent from './MainComponent';
 import StoreComponent from './StoreComponent';
 import SocialComponent from './SocialComponent';
+import TransactionComponent from './TransactionComponent';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route path="social" element={ <SocialComponent/> }>
           <Route path=":name" element={ <SocialComponent/> }/>
+        </Route>
+        <Route path="transaction" element={ <TransactionComponent/> }>
+          <Route path=":hash" element={ <TransactionComponent/> }/>
         </Route>
       </Route>
     </Routes>
