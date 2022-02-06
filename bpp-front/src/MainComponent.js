@@ -45,7 +45,7 @@ const MainComponent = () => {
 
   return (
     <>
-      <div id="backgroundYoutubePlayerUnVisibler ">
+      <div>
         <div id="backgroundYoutubePlayer">&emsp;
           <YouTube
             videoId={ VIDEOID }
