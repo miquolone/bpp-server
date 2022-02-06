@@ -27,6 +27,7 @@ html {
 
 }
 
+/*
 #youtubeWrapL .wallUpper {
     position: absolute;
     width: 200px;
@@ -48,6 +49,18 @@ html {
     right: 0;
     background: url(/assets/svg/cloud_white.svg) 20% / cover;
 }
+
+#youtubeWrapR .wallUnder {
+    position: fixed;
+    width: 568px;
+    height: 100vh;
+    right: 0;
+    background: url(/assets/svg/cloud_perple.svg) 90% / cover;
+    transform: rotate3d(0, 0, 1, 180deg);
+    margin-top: -10rem;
+}
+
+ */
 
 .hide {
     transition-property: opacity, visibility;
@@ -74,15 +87,6 @@ html {
     opacity: 0;
 }
 
-#youtubeWrapR .wallUnder {
-    position: fixed;
-    width: 568px;
-    height: 100vh;
-    right: 0;
-    background: url(/assets/svg/cloud_perple.svg) 90% / cover;
-    transform: rotate3d(0, 0, 1, 180deg);
-    margin-top: -10rem;
-}
 
 nav {
     height: 60px;
@@ -144,8 +148,8 @@ footer {
     box-sizing: border-box;
     padding: 1rem;
     word-spacing: 5px;
-    color : #620ac0bf;
-    background : #fff;
+    color: #620ac0bf;
+    background: #fff;
 }
 
 #backgroundYoutubePlayer {

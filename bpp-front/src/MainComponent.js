@@ -61,12 +61,12 @@ const MainComponent = () => {
         </div>
         <div id="youtubeWrap">
           <div id="youtubeWrapR">
-            <div className="wallUpper">&emsp;</div>
-            <div className="wallUnder">&emsp;</div>
+            {/*<div className="wallUpper">&emsp;</div>*/ }
+            {/*<div className="wallUnder">&emsp;</div>*/ }
           </div>
           <div id="youtubeWrapL">
-            <div className="wallUpper">&emsp;</div>
-            <div className="wallUnder">&emsp;</div>
+            {/*<div className="wallUpper">&emsp;</div>*/ }
+            {/*<div className="wallUnder">&emsp;</div>*/ }
           </div>
         </div>
       </div>
