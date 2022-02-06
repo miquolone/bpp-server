@@ -214,7 +214,7 @@ main {
 }
 
 body {
-    background: #fff;
+    background: #000;
 }
 
 .headerMain {
@@ -336,7 +336,6 @@ nft-card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background: beige;
 }
 
 .circleRotateClassWrapInnterText {
