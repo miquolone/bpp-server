@@ -76,7 +76,7 @@ const MainComponent = () => {
       </header>
 
       <main>
-        <section className="memberActivity">
+        <section>
           <h2>BPP</h2>
           <div className={ "p2" }>
             <div className="corporate_information message">

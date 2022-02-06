@@ -262,22 +262,6 @@ h2:before {
     gap: 1.5rem;
 }
 
-.memberActivity {
-}
-
-.memberIcon {
-    background: #822288a1;
-    border-radius: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: 0.5rem;
-    border: 0.4rem solid #fff;
-}
-
-.memberIcon img {
-    width: 100%;
-}
-
 .donationRecord {
     border-radius: 1rem;
     line-height: 3;
