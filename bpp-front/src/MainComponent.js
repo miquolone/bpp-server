@@ -100,10 +100,6 @@ const MainComponent = () => {
           </div>
         </section>
       </main>
-
-      <footer>
-        &emsp;
-      </footer>
     </>
   );
 };
