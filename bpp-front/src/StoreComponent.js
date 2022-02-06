@@ -16,7 +16,7 @@ const StoreComponent = () => {
     <>
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">SHOP</p>
+        <p className="circleRotateClassWrapInnterText">S.T.O.R.E</p>
       </aside>
 
       <OpenSeaCharacter/>
