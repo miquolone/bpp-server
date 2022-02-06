@@ -16,14 +16,16 @@ const StoreComponent = () => {
     <>
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">S.T.O.R.E</p>
+        <p className="circleRotateClassWrapInnterText">
+          <div className="samePlanets">
+            <canvas id="myCanvas">&emsp</canvas>
+          </div>
+          S.T.O.R.E
+        </p>
       </aside>
 
-      <OpenSeaCharacter/>
 
-      <div className="samePlanets">
-        <canvas id="myCanvas">&emsp</canvas>
-      </div>
+      <OpenSeaCharacter/>
 
       <OpenSeaPlanets/>
 
