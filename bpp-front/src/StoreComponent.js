@@ -1,6 +1,6 @@
 import OpenSeaCharacter from './OpenSeaCharacter';
 import OpenSeaPlanets from './OpenSeaPlanets';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 
 const StoreComponent = () => {
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );

@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useMemo } from 'react';
 
 const openSea = {
   nft: {
@@ -19,39 +19,42 @@ const openSea = {
   }
 };
 
-const OpenSeaCharacter = (props) => {
-  const [ nftPlanets ] = React.useState( openSea );
 
-  React.useEffect( () => {
+const OpenSeaCharacter = () => {
+  const [ nftPlanets ] = useState( openSea );
+
+  const memo = useMemo( () => {
+
+    return (
+      <section className="activity">
+        <h2>CELESTIALS</h2>
+        <p>
+          {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
+          {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
+          {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
+        </p>
+        <div className="activity_contents">
+          {
+            nftPlanets.nft.celestials.map( (v, index) => {
+              const url = new URL( v );
+              const patternResolve = url.pathname.match( new RegExp( /.*assets\/(0x.*?)\/(.*)/ ) );
+              if ( patternResolve ) {
+                const [ , contractAddress, tokenId ] = patternResolve;
+                return (
+                  <div key={ tokenId }>
+                    <nft-card vertical contractAddress={ contractAddress } tokenId={ tokenId }/>
+                  </div>
+                );
+              } else {
+                return ( <></> );
+              }
+            } )
+          }
+        </div>
+      </section>
+    );
+
   }, [] );
-
-  return (
-    <section className="activity">
-      <h2>CELESTIALS</h2>
-      <p>
-        {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
-        {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
-        {/*キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載キャラクタたちの紹介や経緯を記載*/ }
-      </p>
-      <div className="activity_contents">
-        {
-          nftPlanets.nft.celestials.map( (v, index) => {
-            const url = new URL( v );
-            const patternResolve = url.pathname.match( new RegExp( /.*assets\/(0x.*?)\/(.*)/ ) );
-            if ( patternResolve ) {
-              const [ , contractAddress, tokenId ] = patternResolve;
-              return (
-                <div key={ tokenId }>
-                  <nft-card vertical contractAddress={ contractAddress } tokenId={ tokenId }/>
-                </div>
-              );
-            } else {
-              return ( <></> );
-            }
-          } )
-        }
-      </div>
-    </section>
-  );
+  return ( memo );
 };
 export default OpenSeaCharacter;
