@@ -16,8 +16,7 @@ const SocialComponent = () => {
 
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">SOCIAL</p>
-
+        <p className="circleRotateClassWrapInnterText">S.O.C.I.A.L</p>
       </aside>
 
       <div className="samePlanets">
