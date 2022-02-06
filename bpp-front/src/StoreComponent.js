@@ -3,18 +3,22 @@ import OpenSeaPlanets from './OpenSeaPlanets';
 import { useEffect, useState } from 'react';
 
 const StoreComponent = () => {
-  const [ gandamClassName, setGandamClassName ] = useState( "gandam" );
+  const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
   useEffect( () => {
     setTimeout( () => {
-      setGandamClassName( 'gandam-transform' );
+      setCircleRotateClass( 'gandam-transform' );
       console.log( 'Initial timeout!' );
     }, 10 );
   }, [] );
 
   return (
     <>
-      <div className={ gandamClassName }/>
+      <aside className="circleRotateClassWrap">
+        <div className={ circleRotateClassName }/>
+        <p className="circleRotateClassWrapInnterText">SHOP</p>
+      </aside>
+
       <OpenSeaCharacter/>
 
       <div className="samePlanets">

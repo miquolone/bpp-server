@@ -345,24 +345,37 @@ nft-card {
 }
 
 
-.gandam {
+.circleRotateClassWrap {
+    padding-top: 15rem;
+    overflow: hidden;
     height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: beige;
+}
+
+.circleRotateClassWrapInnterText {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0 3px 5px #c3c2c2;
+    text-align: center;
     width: 100%;
-    transition: 3s;
-    transform: rotate(180deg);
+    position: absolute;
+    padding-top: 10rem;
+
 }
 
 .gandam-transform {
-    transition: 3s;
-    display: block;
-    background: url('/assets/svg/gandam.svg');
-    height: 500px;
-    width: 100%;
-    transform-origin: 12% 16% 0%;
-    transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);
-
-    perspective: 1053px;
+    transition: 1.5s 0.1s;
+    background: url('/assets/svg/gandam.svg') no-repeat;
+    height: 250px;
+    width: 250px;
+    transform-origin: 50% 50%;
+    transform: scale(9) rotateZ(-150deg);
+    perspective: 100px;
+    /*transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);*/
     transform-style: preserve-3d;
-    perspective-origin: 11% 10%;
+    perspective-origin: 10% 10%;
 
 }
