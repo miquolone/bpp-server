@@ -54,7 +54,7 @@ const OpenSeaCharacter = () => {
       </section>
     );
 
-  }, [] );
+  }, [nftPlanets] );
   return ( memo );
 };
 export default OpenSeaCharacter;

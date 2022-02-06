@@ -54,7 +54,7 @@ const OpenSeaPlanets = () => {
         </div>
       </section>
     );
-  }, [] );
+  }, [nftPlanets] );
   return ( memo );
 };
 
