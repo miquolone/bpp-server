@@ -4,6 +4,17 @@ import YouTube from 'react-youtube';
 const MainComponent = () => {
 
   useEffect( () => {
+
+    const date = new Date();
+    date.setMonth( date.getMonth() + 1 );
+    date.setDate( 0 );
+
+    document.querySelectorAll( [ '.wallUpper', '.wallUnder' ] ).forEach( wall => {
+      setTimeout( () => {
+        wall.classList.add( 'hide' );
+      }, Math.LOG10E * Math.random() * date.getDate().toString() * Math.random( 200 ) * 200 );
+    } );
+
   }, [] );
 
   const VIDEOID = "86ysdmDYVzw";

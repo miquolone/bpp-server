@@ -21,10 +21,4 @@ window.addEventListener( "load", (event) => {
       overflow: true
     } );
   } );
-  console.log( '[+] palarax init3' );
-  document.querySelectorAll( [ '.wallUpper', '.wallUnder' ] ).forEach( wall => {
-    setTimeout( () => {
-      wall.classList.add( 'hide' );
-    }, Math.LOG10E * Math.random() * 30 * 10 );
-  } );
 } );
