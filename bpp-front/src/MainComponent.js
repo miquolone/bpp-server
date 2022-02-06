@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import YouTube from 'react-youtube';
+import { Link } from 'react-router-dom';
 
 const MainComponent = () => {
 
@@ -79,7 +80,7 @@ const MainComponent = () => {
         <section>
           <h2>BPP</h2>
           <div className={ "p2" }>
-            <div className="corporate_information message">
+            <div className="corporate_information">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
               BPPは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
@@ -99,6 +100,22 @@ const MainComponent = () => {
             </div>
           </div>
         </section>
+
+        <section>
+          <h2>BlenderへのTransaction履歴</h2>
+          <div className={ "p2" }>
+            <div className="corporate_information">
+              2022年1月、BPP組成から２ヶ月でBlenderに初めてのTransactionを作成しました。<br/>
+              かねてよりの第一目標であったBlenderへの寄付が実現され、私たちの目標がいっぽ前進しました。
+              この時のTransactionを円に換算すれば時価は8,000円ほどになります。これはNFTをご購入をいただいた額から経費を差し引いた額となりますので、
+              多くの購入者に支えられていること、並びに日頃お世話になっているBlenderへの貢献がスタートできたことを嬉しく思います。
+              <Link to="Transact">トランザクション履歴</Link>や <a
+              href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              からもご確認いただくことが可能です。
+            </div>
+          </div>
+        </section>
+
       </main>
     </>
   );

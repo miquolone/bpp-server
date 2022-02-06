@@ -3,6 +3,10 @@
     padding: 1rem;
 }
 
+.p2 {
+    padding: 2rem;
+}
+
 .p3 {
     padding: 3rem;
 }
@@ -215,8 +219,9 @@ main {
     z-index: 2;
     background: #fff;
     position: relative;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 0;
     line-height: 1.5rem;
+    margin-bottom: 10rem;
 }
 
 body {
