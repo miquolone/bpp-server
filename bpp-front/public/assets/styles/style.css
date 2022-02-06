@@ -355,7 +355,7 @@ nft-card {
     width: 250px;
     transform-origin: 50% 50%;
     perspective: 100px;
-    animation: kurukuru_phase2 10s linear 0.1s infinite;
+    animation: kurukuru_phase2 40s linear 0.1s infinite;
     transform-style: preserve-3d;
     perspective-origin: 10% 10%;
 }
