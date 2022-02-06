@@ -36,7 +36,8 @@ const TransactionComponent = () => {
               To: 0x9de8991c56f622175274fb358f981af6f903a799
             </ol>
             <ol>
-              <a target="_blank" href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              <a target="_blank" rel="noreferrer"
+                 href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
             </ol>
           </ul>
         </div>
@@ -49,7 +50,8 @@ const TransactionComponent = () => {
               To: 0x9de8991c56f622175274fb358f981af6f903a799
             </ol>
             <ol>
-              <a target="_blank" href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              <a target="_blank" rel="noreferrer"
+                 href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
             </ol>
           </ul>
         </div>
@@ -62,7 +64,8 @@ const TransactionComponent = () => {
               To: 0x9de8991c56f622175274fb358f981af6f903a799
             </ol>
             <ol>
-              <a target="_blank" href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              <a target="_blank" rel="noreferrer"
+                 href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
             </ol>
           </ul>
         </div>
@@ -75,7 +78,8 @@ const TransactionComponent = () => {
               To: 0x9de8991c56f622175274fb358f981af6f903a799
             </ol>
             <ol>
-              <a target="_blank" href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              <a target="_blank" rel="noreferrer"
+                 href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
             </ol>
           </ul>
         </div>
@@ -88,7 +92,8 @@ const TransactionComponent = () => {
               To: 0x9de8991c56f622175274fb358f981af6f903a799
             </ol>
             <ol>
-              <a target="_blank" href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
+              <a target="_blank" rel="noreferrer"
+                 href="https://etherscan.io/tx/0x68bce054b5e4ac72ce8ec2c96120792ed8a911204e8c0ee32785bc6b1956827c">EthScan（外部サイト）</a>
             </ol>
           </ul>
         </div>
