@@ -7,7 +7,6 @@ const SocialComponent = () => {
   useEffect( () => {
     setTimeout( () => {
       setCircleRotateClass( 'gandam-transform' );
-      console.log( 'Initial timeout!' );
     }, 10 );
 
     window.init_cube_kurukuru();
