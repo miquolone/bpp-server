@@ -66,13 +66,8 @@ const MainComponent = () => {
 
       <main>
         <section className="memberActivity">
-          <h2>BPPは友達を集めてるよ</h2>
-          <div className={ "p3" }>
-            <div className="flex-center">
-              <p className="memberIcon">
-                <img src={ "https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240" } alt={ "" }/>
-              </p>
-            </div>
+          <h2>BPP</h2>
+          <div className={ "p2" }>
             <div className="corporate_information message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
