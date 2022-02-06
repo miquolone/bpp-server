@@ -115,6 +115,11 @@ nav .link a {
     padding: 1rem 0.2rem;
 }
 
+nav .link a:hover {
+    text-decoration: underline;
+    padding: 1rem 0.2rem;
+}
+
 
 footer {
     box-shadow: 0 0 3px #eee;
