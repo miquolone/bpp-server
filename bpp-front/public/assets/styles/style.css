@@ -204,19 +204,6 @@ footer {
     margin: 0 auto;
 }
 
-@media all and (min-width: 2000px) {
-
-    .activity div {
-        width: 100%;
-        margin: 1rem auto;
-    }
-
-    .activity p {
-        width: 100%;
-        margin: 1rem auto;
-    }
-}
-
 .stickyBackground {
     margin: 5rem auto;
     text-align: center;
