@@ -24,7 +24,10 @@ const ContactComponent = () => {
         </p>
       </aside>
 
-      <section className="activity">
+      <section className="activity flex-center">
+        <div className={ "p3" }>
+          <a className="t_w" href={ 'https://discord.com/channels/895078439709708318/895078442637336628' }> Discord でお話しましょう </a>
+        </div>
       </section>
     </>
   );
