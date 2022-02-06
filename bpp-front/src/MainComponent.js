@@ -95,7 +95,7 @@ const MainComponent = () => {
 
               Blenderに限らず、みんなが大好きなこと、得意なことを持ち寄って、新しいことやワクワクすることをやっていきたいです！✨
 
-              <a className="t_w" href={ 'https://discord.com/channels/895078439709708318/895078442637336628' }> Discord で話しましょう </a>
+              <a className="t_w" href={ 'https://discord.com/channels/895078439709708318/895078442637336628' }> Discord でお話しましょう </a>
 
             </div>
           </div>
