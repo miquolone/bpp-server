@@ -123,7 +123,7 @@ nav .link a:hover {
 
 footer {
     box-shadow: 0 0 3px #eee;
-    height: 55px;
+    min-height: 55px;
     background: #fff;
     z-index: 2;
     position: fixed;
