@@ -1,3 +1,11 @@
+/** @jsx h */
+/// <reference no-default-lib="true"/>
+/// <reference lib="dom" />
+/// <reference lib="dom.asynciterable" />
+/// <reference lib="deno.ns" />
+
+import { serve } from "https://deno.land/std@0.121.0/http/server.ts";
+import { listenAndServe } from "https://deno.land/std@0.121.0/http/mod.ts";
 import {Application, send, Router} from "https://deno.land/x/oak/mod.ts";
 
 
