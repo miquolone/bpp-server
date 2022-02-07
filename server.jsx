@@ -30,8 +30,10 @@ function HTTPRequestHandler(req) {
   }
 
   return new Response( '<!DOCTYPE html><div><a href="https://bpp-ten.vercel.app/">BPPのページは移動しました</a></div>', {
+    status: 301,
+    statusText: "301 Moved Permanently",
     headers: {
-      "content-type": "text/html; charset=utf-8"
+      "Location": "https://bpp-ten.vercel.app/"
     }
   } );
 }
