@@ -7,7 +7,7 @@
 import { serve } from "https://deno.land/std@0.125.0/http/server.ts";
 
 function HTTPRequestHandler(req) {
-  return new Response( '<!DOCTYPE html><div><a href="https://bpp-ten.vercel.app/">BPPのページは移動しました</a></div>', {
+  return new Response( '', {
     status: 301,
     statusText: "301 Moved Permanently",
     headers: {
