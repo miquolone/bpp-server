@@ -5,9 +5,9 @@
 /// <reference lib="deno.ns" />
 
 import { serve } from "https://deno.land/std@0.125.0/http/server.ts";
-import { listenAndServe } from "https://deno.land/std@0.125.0/http/mod.ts";
 
-async function HTTPRequestHandler(req) {
+function HTTPRequestHandler(req) {
+
   const { pathname } = new URL( req.url );
   const patternResolve = pathname.match( new RegExp( /.*(\..*)/ ) );
   if ( patternResolve ) {
@@ -20,7 +20,7 @@ async function HTTPRequestHandler(req) {
       ".js": "text/javascript"
     };
     try {
-      const file = await Deno.readFile( "./assets/" + pathname );
+      const file = Deno.readFile( "./bpp-front/public/" + pathname );
       return new Response( file, {
         headers: { "content-type": mimeList[ extension ] }
       } );
@@ -29,11 +29,12 @@ async function HTTPRequestHandler(req) {
     }
   }
 
-  const html = ReactDOMServer.renderToString( <Main/> );
-  return new Response( html, {
-    headers: { "content-type": "text/html; charset=utf-8" }
+  return new Response( '<!DOCTYPE html><div><a href="https://bpp-ten.vercel.app/">BPPのページは移動しました</a></div>', {
+    headers: {
+      "content-type": "text/html; charset=utf-8"
+    }
   } );
 }
 
 console.log( "Listening on http://localhost:8000" );
-serve( HTTPRequestHandler );
+await serve( HTTPRequestHandler );
