@@ -1,4 +1,4 @@
-window.addEventListener( "load", (event) => {
+function particleInit() {
   console.log( '[+] particle init' );
 
   particlesJS( "particles-js", {
@@ -41,4 +41,8 @@ window.addEventListener( "load", (event) => {
     },
     "retina_detect": true
   } );
+}
+
+window.addEventListener( "load", (event) => {
+  particleInit();
 } );

@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
-import React from 'react';
 
-function Home() {
+const Home = () => {
+
   return (
     <>
       <div id="overWallCover">
@@ -20,6 +20,6 @@ function Home() {
       <Outlet/>
     </>
   );
-}
+};
 
 export default Home;

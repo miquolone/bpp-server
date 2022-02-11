@@ -10,6 +10,7 @@ const OrganizeComponent = () => {
     }, 10 );
 
     window.init_cube_kurukuru();
+    window.particleInit();
   }, [] );
 
   return (
@@ -23,6 +24,10 @@ const OrganizeComponent = () => {
           O.R.G.A.N.I.Z.E
         </p>
       </aside>
+
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
         <section className="activity">

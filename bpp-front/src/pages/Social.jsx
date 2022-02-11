@@ -10,6 +10,7 @@ const Social = () => {
     }, 10 );
 
     window.init_cube_kurukuru();
+    window.particleInit();
   }, [] );
 
   return (
@@ -24,6 +25,9 @@ const Social = () => {
         </p>
       </aside>
 
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
         {/*// ダミー いただいている自己紹介を載せていく場所に*/ }

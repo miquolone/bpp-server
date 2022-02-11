@@ -1,8 +1,9 @@
 :root {
-    --showOnTheTop: 100;
-    --showOnTheBeforeTop: 99;
-    --fixedBrowserUI: 101;
     --fixedBrowserSPLASH: 102;
+    --fixedBrowserUI: 101;
+    --showOnTheMainContent: 100;
+    --mainContent: 99;
+    --snowDrowpLayer: 97;
 }
 
 code {
@@ -204,7 +205,7 @@ footer {
 
 @media (max-width: 400px) {
     #backgroundYoutubePlayer {
-        z-index: var(--showOnTheBeforeTop);
+        z-index: var(--showOnTheMainContent);
     }
 }
 
@@ -250,7 +251,7 @@ header {
 }
 
 main {
-    z-index: 2;
+    z-index: var(--mainContent);
     background: #6208bf30;
     position: relative;
     border-radius: 1rem 1rem 0 0;
@@ -347,7 +348,7 @@ nft-card {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: var(--showOnTheTop);
+    z-index: var(--snowDrowpLayer);
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;

@@ -3,6 +3,7 @@ import OpenSeaPlanets from '../components/OpenSeaPlanets';
 import { useEffect, useState } from 'react';
 
 const Store = () => {
+
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
   useEffect( () => {
@@ -11,6 +12,7 @@ const Store = () => {
     }, 10 );
 
     window.init_cube_kurukuru();
+    window.particleInit();
   }, [] );
 
   return (
@@ -24,6 +26,10 @@ const Store = () => {
           S.T.O.R.E
         </p>
       </aside>
+
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
         <OpenSeaCharacter/>

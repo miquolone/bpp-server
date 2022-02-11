@@ -2,10 +2,11 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 
+import styles from '../style.modules.scss';
+
 const Main = () => {
 
   useEffect( () => {
-
     const date = new Date();
     date.setMonth( date.getMonth() + 1 );
     date.setDate( 0 );
@@ -15,6 +16,8 @@ const Main = () => {
         wall.classList.add( 'hide' );
       }, Math.LOG10E * Math.random() * date.getDate().toString() * Math.random( 200 ) * 200 );
     } );
+
+    window.particleInit();
 
   }, [] );
 
@@ -83,7 +86,7 @@ const Main = () => {
       <main className="mt5 pt0">
         <section className="activity">
           <h2>BPP</h2>
-          <div className={ "p2" }>
+          <div className={ styles.p2 }>
             <div className="message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 

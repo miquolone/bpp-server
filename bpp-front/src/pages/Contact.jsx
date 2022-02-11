@@ -10,6 +10,7 @@ const Contact = () => {
     }, 10 );
 
     window.init_cube_kurukuru();
+    window.particleInit();
   }, [] );
 
   return (
@@ -23,6 +24,10 @@ const Contact = () => {
           C.O.N.T.A.C.T
         </p>
       </aside>
+
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
         <section className="activity flex-center">

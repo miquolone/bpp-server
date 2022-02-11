@@ -10,6 +10,7 @@ const Transaction = () => {
     }, 10 );
 
     window.init_cube_kurukuru();
+    window.particleInit();
   }, [] );
 
   return (
@@ -24,6 +25,9 @@ const Transaction = () => {
         </p>
       </aside>
 
+      <header>&emsp;
+        <div id="particles-js"/>
+      </header>
 
       <main>
         {/*// ダミー トークンの移動履歴を載せていく場所に*/ }
