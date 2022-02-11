@@ -25,10 +25,11 @@ const StoreComponent = () => {
         </p>
       </aside>
 
+      <main>
+        <OpenSeaCharacter/>
 
-      <OpenSeaCharacter/>
-
-      <OpenSeaPlanets/>
+        <OpenSeaPlanets/>
+      </main>
 
     </>
   );

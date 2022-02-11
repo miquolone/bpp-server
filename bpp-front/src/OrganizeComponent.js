@@ -24,11 +24,13 @@ const OrganizeComponent = () => {
         </p>
       </aside>
 
-      <section className="activity">
-        <div className="flex-center">
-          <p className={ "corporate_information" }>BPPは〜〜〜〜〜どんなとこ？について記載する</p>
-        </div>
-      </section>
+      <main>
+        <section className="activity">
+          <div className="flex-center">
+            <p className={ "corporate_information" }>BPPは〜〜〜〜〜どんなとこ？について記載する</p>
+          </div>
+        </section>
+      </main>
     </>
   );
 };
