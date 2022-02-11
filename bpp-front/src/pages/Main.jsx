@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 
-import styles from '../style.modules.scss';
+// import styles from '../style.modules.scss';
 
 const Main = () => {
 
@@ -86,7 +86,7 @@ const Main = () => {
       <main className="mt5 pt0">
         <section className="activity">
           <h2>BPP</h2>
-          <div className={ styles.p2 }>
+          <div className={ "p2" }>
             <div className="message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
