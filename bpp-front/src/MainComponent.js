@@ -77,8 +77,7 @@ const MainComponent = () => {
       </header>
 
       <div className={ "smallSizeMobileOnlyContent" }>
-        <h3>モバイルの時だけ見えるコンテンツを記載できる</h3>
-        宇宙の営み〜とか書いておけばいいのかな
+        ＊
       </div>
 
       <main className="mt5 pt0">
