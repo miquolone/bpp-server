@@ -247,7 +247,7 @@ main {
     border-radius: 1rem 1rem 0 0;
     line-height: 1.5rem;
     margin-bottom: 10rem;
-    padding: 3rem 2rem 10rem;
+    padding: 500px 2rem 10rem;
 }
 
 body {
@@ -263,7 +263,7 @@ body {
 }
 
 h2 {
-    padding: 2rem 1rem 1rem 4rem;
+    padding: 2rem 1rem 1rem 2rem;
     color: #620abf;
     position: relative;
 }
@@ -341,11 +341,12 @@ nft-card {
     background-position: 50% 50%;
 }
 
-
 .circleRotateClassWrap {
+    position: fixed;
+    width: 100%;
     padding-top: 15rem;
     overflow: hidden;
-    height: 500px;
+    height: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -358,8 +359,6 @@ nft-card {
     text-align: center;
     width: 100%;
     position: absolute;
-    padding-top: 3rem;
-
 }
 
 .gandam-transform {
