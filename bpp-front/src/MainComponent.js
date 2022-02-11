@@ -76,7 +76,12 @@ const MainComponent = () => {
         <div id="particles-js"/>
       </header>
 
-      <main className="mt5">
+      <div className={ "smallSizeMobileOnlyContent" }>
+        <h3>モバイルの時だけ見えるコンテンツを記載できる</h3>
+        宇宙の営み〜とか書いておけばいいのかな
+      </div>
+
+      <main className="mt5 pt0">
         <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
