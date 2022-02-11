@@ -174,16 +174,11 @@ footer {
 }
 
 .message {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     line-height: 2rem;
-    align-items: center;
     box-sizing: border-box;
     padding: 1rem;
     word-spacing: 5px;
     color: #620ac0bf;
-    background: #fff;
 }
 
 #backgroundYoutubePlayer {
