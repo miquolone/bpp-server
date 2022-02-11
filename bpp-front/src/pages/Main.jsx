@@ -2,8 +2,6 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 
-// import styles from '../style.modules.scss';
-
 const Main = () => {
 
   useEffect( () => {
