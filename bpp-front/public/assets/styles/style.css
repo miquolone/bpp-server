@@ -400,11 +400,25 @@ nft-card {
 /*transform: rotateX(-132deg) rotateY(-310deg) rotateZ(-320deg) translate3d(-79px, 37px, -174px) scale3d(1.84, 2.15, 2.39);*/
 
 @keyframes kurukuru_phase2 {
-    from {
-        transform: scale(5)
+    0% {
+        opacity: 0.2;
+        transform: scale(5);
     }
-
-    to {
+    /*0.05% {*/
+    /*    transform: scale(4.7) rotateZ(-14.4deg);*/
+    /*}*/
+    /*5% {*/
+    /*    transform: scale(5) rotateZ(-18.0deg);*/
+    /*}*/
+    50% {
+        opacity: 1;
+        transform: scale(4) rotateZ(-180.0deg);
+    }
+    80% {
+        transform: scale(5) rotateZ(-308.0deg);
+    }
+    100% {
+        opacity: 0.2;
         transform: scale(5) rotateZ(-360.0deg);
     }
 }
