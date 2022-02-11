@@ -11,11 +11,12 @@
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
     "react-youtube": "^7.14.0",
+    "sass": "^1.49.7",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && sass ./src/style.modules.scss  ./dist/style.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -36,5 +37,8 @@
       "last 3 firefox version",
       "last 3 safari version"
     ]
+  },
+  "devDependencies": {
+    "stylelint-config-standard": "^25.0.0"
   }
 }
