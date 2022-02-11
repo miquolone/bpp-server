@@ -102,7 +102,7 @@ html {
 
 .hide {
     transition-property: opacity, visibility;
-    utransition-duration: 0.5s, 0.3s;
+    transition-duration: 0.5s, 0.3s;
     opacity: 0;
     visibility: hidden;
 }
