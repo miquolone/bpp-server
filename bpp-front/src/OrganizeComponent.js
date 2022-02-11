@@ -27,7 +27,7 @@ const OrganizeComponent = () => {
       <main>
         <section className="activity">
           <div className="flex-center">
-            <p className={ "corporate_information" }>BPPは〜〜〜〜〜どんなとこ？について記載する</p>
+            <p className={ "message" }>BPPは〜〜〜〜〜どんなとこ？について記載する</p>
           </div>
         </section>
       </main>

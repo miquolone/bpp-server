@@ -80,7 +80,7 @@ const MainComponent = () => {
         <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
-            <div className="corporate_information">
+            <div className="message">
               ようこそ,Beautiful Planets Projectへ！ <br/>
 
               BPPは、CG制作の初心者から熟練者までが集まるコミュニティです。<br/>
@@ -104,7 +104,7 @@ const MainComponent = () => {
         <section className="activity">
           <h2>BlenderへのTransaction履歴</h2>
           <div className={ "p2" }>
-            <div className="corporate_information">
+            <div className="message">
               2022年1月、BPP組成から２ヶ月でBlenderに初めてのTransactionを作成しました。<br/>
               かねてよりの第一目標であったBlenderへの寄付が実現され、私たちの目標がいっぽ前進しました。
               この時のTransactionを円に換算すれば時価は8,000円ほどになります。これはNFTをご購入をいただいた額から経費を差し引いた額となりますので、
