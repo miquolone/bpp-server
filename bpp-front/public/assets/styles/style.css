@@ -114,17 +114,17 @@ nav {
     box-sizing: border-box;
 }
 
-nav .link {
+.link {
     font-size: 0.8rem;
 }
 
-nav .link a {
+.link a {
     text-decoration: none;
     padding: 1rem 0.2rem;
     font-weight: 100;
 }
 
-nav .link a:hover {
+.link a:hover {
     text-decoration: underline;
     padding: 1rem 0.2rem;
 }
