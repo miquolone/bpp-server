@@ -13,8 +13,6 @@ window.addEventListener( "load", () => {
       } else {
         document.querySelector( '#backgroundYoutubePlayer' ).classList.remove( 'backgroundYoutubePlayerScrolled' );
       }
-
-      console.log( '変更した', entry.isIntersecting );
     } );
   }
 
@@ -23,6 +21,5 @@ window.addEventListener( "load", () => {
 
   document.addEventListener( 'visibilitychange', e => {console.log( e );}, false );
 
-  console.log( 'Observer復帰' );
 }, false );
 
