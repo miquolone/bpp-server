@@ -180,6 +180,13 @@ footer {
     background: #fff url(/assets/svg/arm.svg) no-repeat -12% 39% / 23% 62%
 }
 
+@media (min-width: 760px) {
+    footer {
+        display: none
+    }
+}
+
+
 .t_w {
     color: #efefef;
 }
