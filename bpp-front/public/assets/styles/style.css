@@ -133,7 +133,6 @@ nav {
 footer {
     box-shadow: 0 0 3px #eee;
     min-height: 55px;
-    background: #fff;
     z-index: 2;
     position: fixed;
     bottom: 0;
@@ -147,6 +146,7 @@ footer {
     font-weight: bold;
     padding-right: 3rem;
     box-sizing: border-box;
+    background: #fff url(/assets/svg/arm.svg) no-repeat -12% 39% / 23% 62%
 }
 
 .t_w {
@@ -246,15 +246,6 @@ h2 {
     color: #620abf;
     position: relative;
 }
-
-h2:before {
-    content: "　";
-    background: url(/assets/svg/arm.svg) no-repeat -17% /40%;
-    width: 200px;
-    position: absolute;
-    left: 0;
-}
-
 
 .flex-center {
     display: flex;
