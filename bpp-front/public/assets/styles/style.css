@@ -1,7 +1,8 @@
 :root {
     --fixedBrowserSPLASH: 102;
     --fixedBrowserUI: 101;
-    --showOnTheMainContent: 100;
+
+    --onTheMainContent: 100;
     --mainContent: 99;
     --snowDrowpLayer: 97;
 }
@@ -203,11 +204,12 @@ footer {
     pointer-events: none;
 }
 
-@media (max-width: 400px) {
-    #backgroundYoutubePlayer {
-        z-index: var(--showOnTheMainContent);
-    }
-}
+/* styleだけでのzIndexの制御が画面サイズごとには非現実だった感じ */
+/*@media (max-width: 768px) {*/
+/*    #backgroundYoutubePlayer {*/
+/*        z-index: var(--onTheMainContent);*/
+/*    }*/
+/*}*/
 
 header {
     border-radius: 1rem;
