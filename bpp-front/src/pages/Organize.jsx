@@ -17,6 +17,7 @@ const OrganizeComponent = () => {
     <>
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
+        <span className={ "runrunrunrunrunrunrunrunrun" }/>
         <p className="circleRotateClassWrapInnterText">
           <div className="samePlanets">
             <canvas id="myCanvas">&emsp</canvas>

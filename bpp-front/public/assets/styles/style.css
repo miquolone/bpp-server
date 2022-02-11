@@ -375,6 +375,17 @@ nft-card {
     position: absolute;
 }
 
+.runrunrunrunrunrunrunrunrun {
+    background: url(/assets/images/logo_image.png) 00% 60% / 100% 100% no-repeat;
+    position: fixed;
+    z-index: 101;
+    width: 30px;
+    height: 30px;
+    top: 47rem;
+    animation: kurukuru_phase2 10s linear 0.1s infinite;
+    transform-origin: center;
+}
+
 .gandam-transform {
     background: url('/assets/svg/gandam.svg') no-repeat;
     height: 250px;
