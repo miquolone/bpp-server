@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const ContactComponent = () => {
+const Contact = () => {
 
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
@@ -35,4 +35,4 @@ const ContactComponent = () => {
   );
 };
 
-export default ContactComponent;
+export default Contact;

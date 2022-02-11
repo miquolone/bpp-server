@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const SocialComponent = () => {
+const Social = () => {
 
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
@@ -62,4 +62,4 @@ const SocialComponent = () => {
   );
 };
 
-export default SocialComponent;
+export default Social;

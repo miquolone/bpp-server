@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const TransactionComponent = () => {
+const Transaction = () => {
 
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
@@ -104,4 +104,4 @@ const TransactionComponent = () => {
   );
 };
 
-export default TransactionComponent;
+export default Transaction;

@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
 
-const MainComponent = () => {
+const Main = () => {
 
   useEffect( () => {
 
@@ -125,4 +125,4 @@ const MainComponent = () => {
   );
 };
 
-export default MainComponent;
+export default Main;

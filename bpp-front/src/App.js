@@ -1,13 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
 import React from 'react';
-import Home from './Home';
-import MainComponent from './MainComponent';
-import StoreComponent from './StoreComponent';
-import SocialComponent from './SocialComponent';
-import TransactionComponent from './TransactionComponent';
-import ContactComponent from './ContactComponent';
-import OrganizeComponent from './OrganizeComponent';
+import Home from './pages/Home';
+import MainComponent from './pages/Main';
+import StoreComponent from './pages/Store';
+import SocialComponent from './pages/Social';
+import TransactionComponent from './pages/Transaction';
+import ContactComponent from './pages/Contact';
+import OrganizeComponent from './pages/Organize';
 
 function App() {
   return (

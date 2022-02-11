@@ -1,8 +1,8 @@
-import OpenSeaCharacter from './OpenSeaCharacter';
-import OpenSeaPlanets from './OpenSeaPlanets';
+import OpenSeaCharacter from '../components/OpenSeaCharacter';
+import OpenSeaPlanets from '../components/OpenSeaPlanets';
 import { useEffect, useState } from 'react';
 
-const StoreComponent = () => {
+const Store = () => {
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
   useEffect( () => {
@@ -35,4 +35,4 @@ const StoreComponent = () => {
   );
 };
 
-export default StoreComponent;
+export default Store;
