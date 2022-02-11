@@ -76,7 +76,7 @@ const MainComponent = () => {
         <div id="particles-js"/>
       </header>
 
-      <main>
+      <main className="mt5">
         <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
