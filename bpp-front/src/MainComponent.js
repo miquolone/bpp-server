@@ -77,7 +77,7 @@ const MainComponent = () => {
       </header>
 
       <main>
-        <section>
+        <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
             <div className="corporate_information">
@@ -101,7 +101,7 @@ const MainComponent = () => {
           </div>
         </section>
 
-        <section>
+        <section className="activity">
           <h2>BlenderへのTransaction履歴</h2>
           <div className={ "p2" }>
             <div className="corporate_information">
