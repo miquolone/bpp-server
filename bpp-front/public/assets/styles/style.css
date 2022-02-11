@@ -13,7 +13,7 @@ code {
 }
 
 #root {
-    background: #fff;
+    background: #000;
 
 }
 
@@ -310,7 +310,7 @@ main {
 }
 
 body {
-    background: #000;
+    background: #fff;
     height: 100vh;
     margin: 0;
     font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, Arial, sans-serif;
