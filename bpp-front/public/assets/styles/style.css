@@ -1,3 +1,8 @@
+:root {
+    --showOnTheTop: 100;
+    --showOnTheBeforeTop: 99;
+    --fixedBrowserUI: 101;
+}
 
 #root {
     background: #000;
@@ -11,6 +16,10 @@ ul {
 
 .m1 {
     margin: 1rem;
+}
+
+.mt5 {
+    margin-top: 5rem;
 }
 
 .p1 {
@@ -109,7 +118,7 @@ html {
 nav {
     height: 60px;
     background: #fff;
-    z-index: 3;
+    z-index: var(--fixedBrowserUI);
     top: 0;
     position: fixed;
     width: 100%;
@@ -190,7 +199,7 @@ footer {
 
 @media (max-width: 400px) {
     #backgroundYoutubePlayer {
-        z-index: 100;
+        z-index: var(--showOnTheBeforeTop);
     }
 }
 
@@ -310,7 +319,7 @@ nft-card {
     background: #620abf;
     height: 100vh;
     width: 100%;
-    z-index: 4;
+    z-index: var(--fixedBrowserUI);
     display: grid;
     justify-content: center;
     align-content: center;
@@ -329,7 +338,7 @@ nft-card {
     position: fixed;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: var(--showOnTheTop);
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
