@@ -161,8 +161,42 @@ nav {
 }
 
 
-footer {
-    display: none
+/*NavigationComponent experiment*/
+@media (max-width: 760px) {
+    footer {
+        display: none;
+    }
+}
+
+.wakusei {
+    background: coral;
+}
+
+.wakusei .nn1 {
+    background: rgba(74, 158, 209, 0.6);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: matrix(-1, 0, 0, 1, 37, 37);
+    border-radius: 1rem;
+}
+
+.wakusei .nn2 {
+    background: rgba(74, 158, 209, 0.6);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: matrix(0, 1, 1, 0, -15, 70);
+    border-radius: 1rem;
+}
+
+.wakusei .nn3 {
+    background: rgba(74, 158, 209, 0.6);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: matrix(0, 1, -1, 0, -71, 39);
+    border-radius: 1rem;
 }
 
 @media (min-width: 760px) {

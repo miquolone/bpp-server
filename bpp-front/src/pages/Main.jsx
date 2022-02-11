@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import YouTube from 'react-youtube';
 import { Link } from 'react-router-dom';
+import NavigationComponent from '../components/NavigationComponent';
 
 const Main = () => {
 
@@ -120,7 +121,7 @@ const Main = () => {
             </div>
           </div>
         </section>
-
+        <NavigationComponent/>
       </main>
     </>
   );
