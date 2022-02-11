@@ -4,7 +4,7 @@ const NavigationComponent = () => {
   const [ select, setSelect ] = useState( false );
 
   const style = {
-    border: "3px solid #888",
+    border: "3px solid #fff",
     position: "fixed",
     zIndex: "2938",
     bottom: "3rem",

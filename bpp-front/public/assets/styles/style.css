@@ -13,7 +13,7 @@ code {
 }
 
 #root {
-    background: #000;
+    background: linear-gradient(#6208bf00, #7d00ff90);
 }
 
 ul {
@@ -296,7 +296,6 @@ header {
 
 main {
     z-index: var(--mainContent);
-    background: linear-gradient(#6208bf00, #7d00ff80);
     position: relative;
     border-radius: 1rem 1rem 0 0;
     line-height: 1.5rem;
