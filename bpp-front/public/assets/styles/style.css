@@ -121,6 +121,7 @@ nav .link {
 nav .link a {
     text-decoration: none;
     padding: 1rem 0.2rem;
+    font-width: 100;
 }
 
 nav .link a:hover {
