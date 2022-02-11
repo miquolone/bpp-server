@@ -5,12 +5,10 @@
     --fixedBrowserSPLASH: 102;
 }
 
-
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
 
 #root {
     background: #000;
@@ -398,7 +396,6 @@ nft-card {
         transform: scale(5) rotateZ(-360.0deg);
     }
 }
-
 
 .smallSizeMobileOnlyContent {
     color: #fff;
