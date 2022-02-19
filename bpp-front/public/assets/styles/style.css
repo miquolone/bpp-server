@@ -164,6 +164,9 @@ nav {
 
 /*NavigationComponent experiment*/
 @media (max-width: 760px) {
+    html {
+        background: #fff;
+    }
     footer {
         border-top: 5px solid #888;
     }
