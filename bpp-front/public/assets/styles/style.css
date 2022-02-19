@@ -5,6 +5,10 @@
     --onTheMainContent: 100;
     --mainContent: 99;
     --snowDrowpLayer: 97;
+
+    --colorBlack: #000;
+    --colorPerple: #620abf;
+    --colorPerpleDark: #28054f;
 }
 
 code {
@@ -13,8 +17,7 @@ code {
 }
 
 #root {
-    background: #000;
-
+    background: var(--colorBlack);
 }
 
 ul {
@@ -110,21 +113,24 @@ html {
 }
 
 .hide1s {
-    transition-property: opacity;
-    transition-duration: 1s;
+    transition-property: opacity, visibility;
+    transition-duration: 1s, 0.5s;
     opacity: 0;
+    visibility: hidden;
 }
 
 .hide2s {
-    transition-property: opacity;
-    transition-duration: 2s;
+    transition-property: opacity, visibility;
+    transition-duration: 2s, 2s;
     opacity: 0;
+    visibility: hidden;
 }
 
 .hide5s {
-    transition-property: opacity;
-    transition-duration: 5s;
+    transition-property: opacity, visibility;
+    transition-duration: 5s, 5s;
     opacity: 0;
+    visibility: hidden;
 }
 
 
@@ -140,7 +146,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #620abf;
+    color: var(--colorPerple);
     font-weight: bold;
     padding-right: 3rem;
     box-sizing: border-box;
@@ -167,6 +173,7 @@ nav {
     html {
         background: #fff;
     }
+
     footer {
         border-top: 5px solid #888;
     }
@@ -220,7 +227,7 @@ nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        color: #620abf;
+        color: var(--colorPerple);
         font-weight: bold;
         padding-right: 3rem;
         box-sizing: border-box;
@@ -300,7 +307,7 @@ header {
     border-radius: 2rem;
     padding: 0 0.5rem 0 0;
     margin: 0.5rem;
-    border: 3px solid #620abf;
+    border: 3px solid var(--colorPerple);
     width: calc(100vw * 0.2);
     max-width: 80px;
     background-blend-mode: color-burn;
@@ -334,7 +341,7 @@ body {
 
 h2 {
     padding: 2rem 1rem 1rem 2rem;
-    color: #620abf;
+    color: var(--colorPerple);
     position: relative;
 }
 
@@ -380,15 +387,26 @@ nft-card {
 }
 
 #overWallCover {
-    top: 0;
     position: fixed;
-    background: #620abf;
-    height: 100vh;
+    background: #fff;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     z-index: var(--fixedBrowserSPLASH);
-    display: grid;
+}
+
+#overWallCoverInner {
+    width: 99%;
+    height: 99%;
+    background: var(--colorPerpleDark);
+    border: 1px solid var(--colorPerple);
+    border-radius: 1rem;
+    display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 #overWallCover img {

@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <>
       <div id="overWallCover">
-        <img alt="" src="https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240"/>
+        <div id="overWallCoverInner">
+          <img alt="" src="https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240"/>
+        </div>
       </div>
 
       <nav className="flex">
