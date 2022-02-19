@@ -241,7 +241,7 @@ nav {
     .backgroundYoutubePlayerScrolled {
         position: fixed;
         z-index: var(--fixedBrowserUI);
-        bottom: 0;
+        bottom: 2rem;
         transform: scale(0.5) translateX(40vw);
     }
 }
