@@ -221,6 +221,7 @@ nav {
     padding: 1rem;
     word-spacing: 5px;
     color: #620ac0bf;
+    word-break: break-all;
 }
 
 #backgroundYoutubePlayer {
