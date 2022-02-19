@@ -59,11 +59,38 @@
                 <a href="/contact/">Contact</a>
             </div>
         </div>
-        <button onclick="showThanksMember()">
+        <button onclick="showThanksMember()" id="showThanksMember">
             <img src="/assets/svg/arrow_down.svg" width="30" alt=""/>
         </button>
     </footer>
     <style>
+        footer {
+            border: 0;
+            box-shadow: 0 0 3px #eee;
+            min-height: 55px;
+            z-index: var(--fixedBrowserUI);
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            border-radius: 1rem 1rem 0 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--colorPerple);
+            font-weight: bold;
+            padding-right: 3rem;
+            box-sizing: border-box;
+            background: #fff url(/assets/svg/arm.svg) no-repeat -12% 39% / 23% 62%;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 760px) {
+            footer a {
+                visibility: hidden;
+            }
+        }
+
         footer .thanksMember {
             transition-property: height, visibility, opacity;
             transition-duration: 0.8s, 1s;
@@ -82,12 +109,22 @@
             opacity: 1;
         }
 
+        footer #showThanksMember {
+            -webkit-appearance: none;
+            border: none;
+        }
+
+        .rotate180 {
+            transform: rotate(180deg);
+        }
+
     </style>
     <script>
       let isShown = false;
       const showThanksMember = () => {
         isShown = !isShown;
         document.querySelector( '.thanksMember' ).classList.toggle( "thanksMemberAffectShown" );
+        document.querySelector( '#showThanksMember img' ).classList.toggle( "rotate180" );
       };
     </script>
 </html>

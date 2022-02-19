@@ -174,14 +174,6 @@ nav {
     html {
         background: #fff;
     }
-
-    footer {
-        border-top: 5px solid #888;
-    }
-
-    footer a {
-        visibility: hidden;
-    }
 }
 
 .wakusei {
@@ -216,28 +208,6 @@ nav {
     height: 50px;
     transform: matrix(0, 1, -1, 0, -71, 39);
     border-radius: 1rem;
-}
-
-@media (min-width: 760px) {
-    footer {
-        box-shadow: 0 0 3px #eee;
-        min-height: 55px;
-        z-index: var(--fixedBrowserUI);
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        border-radius: 1rem 1rem 0 0;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: var(--colorPerple);
-        font-weight: bold;
-        padding-right: 3rem;
-        box-sizing: border-box;
-        background: #fff url(/assets/svg/arm.svg) no-repeat -12% 39% / 23% 62%;
-        flex-wrap: wrap;
-    }
 }
 
 
