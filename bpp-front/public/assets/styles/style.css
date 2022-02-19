@@ -480,6 +480,7 @@ nft-card {
 }
 
 .smallSizeMobileOnlyContent {
+    text-align: center;
     color: #fff;
     margin: 1rem;
 }

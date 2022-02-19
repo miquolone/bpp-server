@@ -79,10 +79,10 @@ const Main = () => {
       </header>
 
       <div className={ "smallSizeMobileOnlyContent" }>
-        ＊
+        ＊ ＊ ＊ ＊ ＊ ＊大画面以外で露出＊ ＊ ＊ ＊ ＊
       </div>
 
-      <main className="mt5 pt0">
+      <main className="mt4 pt0">
         <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
