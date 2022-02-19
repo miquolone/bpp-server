@@ -250,13 +250,17 @@ nav {
     pointer-events: none;
 }
 
-/** ある程度スクロールすると小型化して右下へ **/
-.backgroundYoutubePlayerScrolled {
-    position: fixed;
-    z-index: var(--fixedBrowserUI);
-    bottom: 0;
-    transform: scale(0.5) translateX(40vw);
+
+/** 1024pxを堺に小型デバイスのみ、ある程度スクロールすると背景動画は小型化して右下へ **/
+@media (max-width: 1024px) {
+    .backgroundYoutubePlayerScrolled {
+        position: fixed;
+        z-index: var(--fixedBrowserUI);
+        bottom: 0;
+        transform: scale(0.5) translateX(40vw);
+    }
 }
+
 
 header {
     border-radius: 1rem;
