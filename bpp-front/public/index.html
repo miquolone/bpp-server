@@ -42,7 +42,16 @@
     </body>
 
     <footer>
+        <section class="thanksMember">
+            隠しコンテンツ
+            隠しコンテンツ
+            隠しコンテンツ
+            隠しコンテンツ
+            隠しコンテンツ
+            隠しコンテンツ
+        </section>
         &emsp;
+
         <div class="flex">
             <div class="link">
                 <a href="/transaction/">Transaction</a>
@@ -50,6 +59,35 @@
                 <a href="/contact/">Contact</a>
             </div>
         </div>
-        <img src="/assets/svg/arrow_down.svg" width="30"/>
+        <button onclick="showThanksMember()">
+            <img src="/assets/svg/arrow_down.svg" width="30" alt=""/>
+        </button>
     </footer>
+    <style>
+        footer .thanksMember {
+            transition-property: height, visibility, opacity;
+            transition-duration: 0.8s, 1s;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            width: 100%;
+        }
+
+        footer .thanksMemberAffectShown {
+            padding: 5rem;
+            transition-property: height, visibility, opacity;
+            transition-duration: 0.8s, 1s;
+            height: 50rem;
+            visibility: visible;
+            opacity: 1;
+        }
+
+    </style>
+    <script>
+      let isShown = false;
+      const showThanksMember = () => {
+        isShown = !isShown;
+        document.querySelector( '.thanksMember' ).classList.toggle( "thanksMemberAffectShown" );
+      };
+    </script>
 </html>

@@ -23,9 +23,9 @@ const NavigationComponent = () => {
         {
           select ?
             <div className="wakusei">
-              <p className={ "nn1" } href="#">A</p>
-              <p className={ "nn2" } href="#">B</p>
-              <p className={ "nn3" } href="#">C</p>
+              <p className={ "nn1" } href="/social/">AA</p>
+              <p className={ "nn2" } href="/store/">BB</p>
+              <p className={ "nn3" } href="/transaction/">CC</p>
             </div>
             :
             <>
