@@ -134,6 +134,13 @@ html {
     visibility: hidden;
 }
 
+.expand1s {
+    transition-duration: 0.3s, 1s, 1.5s;
+    transition-property: width, background-color, height;
+    width: 100%;
+    background-color: #000;
+}
+
 
 nav {
     height: 60px;

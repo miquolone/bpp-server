@@ -13,6 +13,11 @@ const SplashWindowComponent = () => {
   useEffect( () => {
     console.log( '[+] Splash init' );
     setTimeout( () => {
+      document.querySelector( '#overWallCoverInner' ).classList.add( 'expand1s' );
+      document.querySelector( '#overWallCoverInner' ).style.width = '100%';
+      document.querySelector( '#overWallCoverInner' ).style.backgroundColor = '#000';
+      document.querySelector( '#overWallCoverInner' ).style.border = '0';
+      document.querySelector( '#overWallCoverInner' ).style.height = '100%';
       document.querySelector( '#overWallCoverInner img' ).classList.add( 'hide2s' );
       document.querySelector( '#overWallCover' ).classList.add( 'hide1s' );
     }, 1000 );
