@@ -4,10 +4,10 @@ const SplashWindowComponent = () => {
   useEffect( () => {
     console.log( '[+] Splash init' );
 
-    document.querySelector( '#overWallCover img' )?.classList.add( 'hide1s' );
     setTimeout( () => {
+      document.querySelector( '#overWallCover img' )?.classList.add( 'hide2s' );
       document.querySelector( '#overWallCover' ).classList.add( 'hide1s' );
-    }, 1000 );
+    }, 3000 );
 
   }, [] );
 

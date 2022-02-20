@@ -374,9 +374,9 @@ nft-card {
 }
 
 #overWallCoverInner {
-    width: 97%;
+    width: 94%;
     justify-content: center;
-    height: 94%;
+    height: 90%;
     background: var(--colorPerpleDark);
     border: 1px solid var(--colorPerple);
     border-radius: 1rem;
@@ -387,7 +387,7 @@ nft-card {
 
 #overWallCover img {
     transition-duration: 1s;
-    width: 70%;
+    width: 50%;
     border-radius: 5rem;
 }
 
@@ -395,9 +395,7 @@ nft-card {
     width: 70%;
     color: #fff;
     text-align: center;
-
 }
-
 
 #particles-js {
     position: fixed;
