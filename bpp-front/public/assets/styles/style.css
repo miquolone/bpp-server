@@ -387,7 +387,7 @@ nft-card {
 
 #overWallCover img {
     transition-duration: 1s;
-    width: 50%;
+    width: calc(100vw / 0.2);
     border-radius: 5rem;
 }
 
