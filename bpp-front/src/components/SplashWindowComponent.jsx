@@ -15,7 +15,9 @@ const SplashWindowComponent = () => {
     <>
       <div id="overWallCover">
         <div id="overWallCoverInner">
-          <img alt="" src="https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240"/>
+          <img alt="" src="https://media.discordapp.net/attachments/932636979374477362/943141661255561256/PULSACHAN_alpha.png"/>
+          <p className={ "loadingPercentage" }>100%</p>
+          <p className={ "splashCreator" }>@De</p>
         </div>
       </div>
     </>
