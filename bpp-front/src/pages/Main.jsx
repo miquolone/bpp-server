@@ -71,8 +71,8 @@ const Main = () => {
             // containerClassName={ string }
             opts={ opts }
             onReady={ onPlayerReady }
-            onPlay={ () => {console.log( 'playing' );} }
-            onPause={ () => {console.log( 'pause' );} }
+            // onPlay={ () => {console.log( 'playing' );} }
+            // onPause={ () => {console.log( 'pause' );} }
             onEnd={ onPlayerHandle }
             onStateChange={ onPlayerReady }
           />
