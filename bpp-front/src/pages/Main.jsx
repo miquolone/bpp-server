@@ -23,9 +23,9 @@ const Main = () => {
       entries.forEach( entry => {
 
         if ( !entry.isIntersecting ) {
-          document.querySelector( '#backgroundYoutubePlayer' ).classList.add( 'backgroundYoutubePlayerScrolled' );
+          document.querySelector( '#backgroundYoutubePlayer' )?.classList.add( 'backgroundYoutubePlayerScrolled' );
         } else {
-          document.querySelector( '#backgroundYoutubePlayer' ).classList.remove( 'backgroundYoutubePlayerScrolled' );
+          document.querySelector( '#backgroundYoutubePlayer' )?.classList.remove( 'backgroundYoutubePlayerScrolled' );
         }
       } );
     }
