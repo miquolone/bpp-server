@@ -19,12 +19,12 @@ const Store = () => {
     <>
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">
+        <div className="circleRotateClassWrapInnterText">
           <div className="samePlanets">
             <canvas id="myCanvas">&emsp</canvas>
           </div>
           S.T.O.R.E
-        </p>
+        </div>
       </aside>
 
       <header>&emsp;
