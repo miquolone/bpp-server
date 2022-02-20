@@ -1,5 +1,5 @@
-function init_cube_kurukuru() {
-  console.log( '[+] ThreeExample init' );
+function init_cube_kurukuru(from) {
+  console.log( '[+] ThreeExample init', from );
   const width = "331";
   const height = width * ( 1 / 1.7 );
 
@@ -30,4 +30,5 @@ function init_cube_kurukuru() {
   }
 }
 
-window.addEventListener( "load", init_cube_kurukuru );
+// debug use
+// window.addEventListener( "load", init_cube_kurukuru );

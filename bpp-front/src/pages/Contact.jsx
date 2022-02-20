@@ -9,7 +9,7 @@ const Contact = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru();
+    window.init_cube_kurukuru( "contact" );
     window.particleInit();
   }, [] );
 

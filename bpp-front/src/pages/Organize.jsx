@@ -9,7 +9,7 @@ const OrganizeComponent = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru();
+    window.init_cube_kurukuru("organize");
     window.particleInit();
   }, [] );
 

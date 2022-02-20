@@ -11,7 +11,7 @@ const Store = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru();
+    window.init_cube_kurukuru( "store" );
     window.particleInit();
   }, [] );
 

@@ -9,7 +9,7 @@ const Social = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru();
+    window.init_cube_kurukuru( "social" );
     window.particleInit();
   }, [] );
 
