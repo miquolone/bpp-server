@@ -33,7 +33,6 @@ const Main = () => {
     new IntersectionObserver( intersectionCallback, {
       threshold: [ 0, 0.01, 1.0 ], rootMargin: '0% 0px'
     } ).observe( document.querySelector( "header" ) );
-    console.log( 222222 );
   }, [] );
 
   const VIDEOID = "86ysdmDYVzw";
