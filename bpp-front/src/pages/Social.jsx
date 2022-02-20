@@ -17,12 +17,12 @@ const Social = () => {
     <>
       <aside className="circleRotateClassWrap">
         <div className={ circleRotateClassName }/>
-        <p className="circleRotateClassWrapInnterText">
+        <div className="circleRotateClassWrapInnterText">
           <div className="samePlanets">
             <canvas id="myCanvas">&emsp</canvas>
           </div>
           S.O.C.I.A.L
-        </p>
+        </div>
       </aside>
 
       <header>&emsp;
