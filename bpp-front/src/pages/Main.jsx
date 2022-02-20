@@ -18,6 +18,22 @@ const Main = () => {
 
     window.particleInit();
 
+    /// Youtubeわく専用 動画はpip で表示する
+    function intersectionCallback(entries) {
+      entries.forEach( entry => {
+
+        if ( !entry.isIntersecting ) {
+          document.querySelector( '#backgroundYoutubePlayer' ).classList.add( 'backgroundYoutubePlayerScrolled' );
+        } else {
+          document.querySelector( '#backgroundYoutubePlayer' ).classList.remove( 'backgroundYoutubePlayerScrolled' );
+        }
+      } );
+    }
+
+    new IntersectionObserver( intersectionCallback, {
+      threshold: [ 0, 0.01, 1.0 ], rootMargin: '0% 0px'
+    } ).observe( document.querySelector( "header" ) );
+    console.log( 222222 );
   }, [] );
 
   const VIDEOID = "86ysdmDYVzw";
