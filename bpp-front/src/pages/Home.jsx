@@ -1,25 +1,19 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import FooterComponent from '../components/FooterComponent';
+import NavbarComponent from '../components/NavbarComponent';
+import SplashWindowComponent from '../components/SplashWindowComponent';
 
 const Home = () => {
 
   return (
     <>
-      <div id="overWallCover">
-        <div id="overWallCoverInner">
-          <img alt="" src="https://cdn.discordapp.com/avatars/578158816680607754/73b2316eabaf54649d6c1fc32fe22a1e.webp?size=240"/>
-        </div>
-      </div>
+      <SplashWindowComponent/>
 
-      <nav className="flex">
-        <a href={ "/" }> <img className="logo_img" src="/assets/images/bpp_150_alpha.png" alt={ "" }/> </a>
-        <div className={ "link" }>
-          <Link to={ "/" }> HOME </Link>
-          <Link to={ "/STORE" }> STORE </Link>
-          <Link to={ "/SOCIAL " }> SOCIAL </Link>
-        </div>
-      </nav>
+      <NavbarComponent/>
 
       <Outlet/>
+
+      <FooterComponent/>
     </>
   );
 };

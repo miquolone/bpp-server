@@ -41,28 +41,6 @@
         <div id="root"></div>
     </body>
 
-    <footer>
-        <section class="thanksMember">
-            隠しているわけではないコンテンツ
-            隠しているわけではないコンテンツ
-            隠しているわけではないコンテンツ
-            隠しているわけではないコンテンツ
-            隠しているわけではないコンテンツ
-            隠しているわけではないコンテンツ
-        </section>
-        &emsp;
-
-        <div class="flex">
-            <div class="link">
-                <a href="/transaction/">Transaction</a>
-                <a href="/organize/">Organize</a>
-                <a href="/contact/">Contact</a>
-            </div>
-        </div>
-        <button onclick="showThanksMember()" id="showThanksMember">
-            <img src="/assets/svg/arrow_down.svg" width="30" alt=""/>
-        </button>
-    </footer>
     <style>
         button {
             background: unset;
@@ -96,7 +74,7 @@
         }
 
         footer .thanksMember {
-            transition-property: height, visibility, opacity;
+            transition -property: height, visibility, opacity;
             transition-duration: 0.8s, 1s;
             height: 0;
             visibility: hidden;
@@ -114,21 +92,13 @@
         }
 
         footer #showThanksMember {
-            -webkit-appearance: none;
+            -webkit -appearance: none;
             border: none;
         }
 
         .rotate180 {
             transform: rotate(180deg);
         }
-
     </style>
-    <script>
-      let isShown = false;
-      const showThanksMember = () => {
-        isShown = !isShown;
-        document.querySelector( '.thanksMember' ).classList.toggle( "thanksMemberAffectShown" );
-        document.querySelector( '#showThanksMember img' ).classList.toggle( "rotate180" );
-      };
-    </script>
+
 </html>

@@ -1,10 +1,6 @@
 window.addEventListener( "load", () => {
-  console.log( '[+] BPP init' );
-  document.querySelector( '#overWallCover img' )?.classList.add( 'hide1s' );
-  setTimeout( () => {
-    document.querySelector( '#overWallCover').classList.add( 'hide1s' );
-  }, 1000 );
 
+  console.log( '[+] BPP init' );
 
   /// Youtubeわく専用 動画はpip で表示する
   function intersectionCallback(entries) {
