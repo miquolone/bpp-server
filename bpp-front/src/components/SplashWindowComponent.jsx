@@ -8,7 +8,10 @@ import { atomWithStorage } from 'jotai/utils';
 // const citiesAtom = atom(['Tokyo', 'Kyoto', 'Osaka'])
 // const mangaAtom = atom({ 'Dragon Ball': 1984, 'One Piece': 1997, Naruto: 1999 })
 
-const splashedAtom = atomWithStorage( 'splashed', false );
+const splashedAtom = atomWithStorage(
+  'splashed',
+  false, window.sessionStorage
+);
 
 const SplashWindowComponent = () => {
   const [ splashed, setSplashed ] = useAtom( splashedAtom );
@@ -25,9 +28,9 @@ const SplashWindowComponent = () => {
         document.querySelector( '#overWallCover' ).classList.add( 'hide1s' );
         // setSplashed( true );
         setSplashed( true );
-      }, 1000 );
+      }, 3000 );
     }
-  }, [] );
+  }, [ setSplashed, splashed ] );
 
   return (
     <>
