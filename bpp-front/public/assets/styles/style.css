@@ -492,17 +492,17 @@ nft-card {
 
 .aa {
     height: 38%;
-    background: #777a;
+    /*background: #777a;*/
     display: flex;
 }
 
 .bb {
     width: 25%;
-    background: #872a;
+    /*background: #872a;*/
 }
 
 .cc {
-    background: #fff;
+    /*background: #fff;*/
     width: 60px;
     margin: 10px;
     border-radius: 2rem;
@@ -513,14 +513,14 @@ nft-card {
     padding: 17px 40px 13px;
     color: #eee;
     font-size: 0.9rem;
-    background: #d723;
+    /*background: #d723;*/
     word-break: break-all;
     line-height: 1rem;
 }
 
 .ee {
     height: 62%;
-    background: #777a
+    /*background: #777a*/
 }
 
 .ff {
@@ -530,7 +530,7 @@ nft-card {
     padding: 12px;
     color: #eee;
     font-size: 0.9rem;
-    background: #d723;
+    /*background: #d723;*/
     word-break: break-all;
     line-height: 1.3rem;
 }
