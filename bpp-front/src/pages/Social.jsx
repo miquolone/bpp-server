@@ -33,8 +33,13 @@ const Social = () => {
       <main>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
-            [ 0, 1, 2, 3 ].map( () => {
-              return <WakuComponent/>;
+            [
+              { image: "/assets/images/ume.webp", title: "ABC", description: "dEF" },
+              { image: "/assets/images/ume.webp", title: "ABC", description: "dEF" },
+              { image: "/assets/images/ume.webp", title: "ABC", description: "dEF" },
+              { image: "/assets/images/ume.webp", title: "ABC", description: "dEF" }
+            ].map( (member) => {
+              return <WakuComponent member={ member }/>;
             } )
           }
         </div>
