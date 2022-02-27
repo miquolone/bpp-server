@@ -255,7 +255,6 @@ nav {
     }
 }
 
-
 header {
     border-radius: 1rem;
     margin: 0 auto;
@@ -488,4 +487,56 @@ nft-card {
     text-align: center;
     color: #fff;
     margin: 1rem;
+}
+
+
+.aa {
+    height: 38%;
+    background: #777a;
+    display: flex;
+}
+
+.bb {
+    width: 25%;
+    background: #872a;
+}
+
+.cc {
+    background: #fff;
+    width: 60px;
+    margin: 10px;
+    border-radius: 2rem;
+}
+
+.dd {
+    width: 75%;
+    padding: 17px 40px 13px;
+    color: #eee;
+    font-size: 0.9rem;
+    background: #d723;
+    word-break: break-all;
+    line-height: 1rem;
+}
+
+.ee {
+    height: 62%;
+    background: #777a
+}
+
+.ff {
+    margin: 0 auto;
+    max-height: 3rem;
+    overflow: hidden;
+    padding: 12px;
+    color: #eee;
+    font-size: 0.9rem;
+    background: #d723;
+    word-break: break-all;
+    line-height: 1.3rem;
+}
+
+.gg {
+    background: url(/assets/svg/waku.svg) no-repeat;
+    height: 186px;
+    width: 326px;
 }
