@@ -15,12 +15,6 @@ const FooterComponent = () => {
     <>
       <footer>
         <section className="thanksMember">
-          隠しているわけではないコンテンツ
-          隠しているわけではないコンテンツ
-          隠しているわけではないコンテンツ
-          隠しているわけではないコンテンツ
-          隠しているわけではないコンテンツ
-          隠しているわけではないコンテンツ
         </section>
         &emsp;
 

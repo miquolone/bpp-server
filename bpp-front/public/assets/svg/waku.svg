@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 374 213">
     <defs>
         <style>
-            .a{fill:#dbdbdb;}.b{fill:none;stroke:#c2c2c2;stroke-miterlimit:8;opacity:0;}.c{fill:#414143;}.c,.d,.e,.g{fill-rule:evenodd;}.d,.e,.f{fill:#620ac0;}.d{opacity:0.2;}.g{fill:#fff;}.h{fill:#fff2cc;}
+            .a{fill:#dbdbdbaa;}.b{fill:none;stroke:#c2c2c2;stroke-miterlimit:8;opacity:0;}.c{fill:#414143;}.c,.d,.e,.g{fill-rule:evenodd;}.d,.e,.f{fill:#620ac0;}.d{opacity:0.2;}.g{fill:#fff;}.h{fill:#fff2cc;}
         </style>
     </defs>
     <rect class="a" x="1.48" y="73.48" width="372" height="137" rx="6.99"/>
