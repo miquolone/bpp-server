@@ -40,7 +40,6 @@ const Social = () => {
       </header>
 
       <main>
-        <AirtableComponent/>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
             data.map( (member) => {
