@@ -5,10 +5,10 @@ const WakuComponent = (memberProps) => {
         <div className={ "aa" }>
           <div className={ "bb" }>
             <img className={ "cc" } src={ memberProps.member.image ?? '/assets/images/ume.webp' } alt={ "" }/></div>
-          <div className={ "dd" }>{ memberProps.member.title ?? "------" }</div>
+          <div className={ "dd" }>{ memberProps.member.name ?? "" }</div>
         </div>
         <div className={ "ee" }>
-          <p className={ "ff" }>{ memberProps.member.description ?? "---" }</p>
+          <p className={ "ff" }>{ memberProps.member.comment ?? "" }</p>
         </div>
       </div>
     </>

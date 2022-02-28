@@ -504,18 +504,19 @@ nft-card {
 .cc {
     /*background: #fff;*/
     width: 60px;
-    margin: 10px;
+    margin: 7px 11px;
     border-radius: 2rem;
 }
 
 .dd {
+    font-weight: bold;
     width: 75%;
-    padding: 17px 40px 13px;
+    padding: 30px 40px 13px 75px;
     color: #eee;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     /*background: #d723;*/
     word-break: break-all;
-    line-height: 1rem;
+    line-height: 1.3rem;
 }
 
 .ee {
@@ -525,14 +526,16 @@ nft-card {
 
 .ff {
     margin: 0 auto;
+    letter-spacing: 1px;
     max-height: 3rem;
     overflow: hidden;
     padding: 12px;
-    color: #eee;
-    font-size: 0.9rem;
+    color: var(--colorPerpleDark);
+    text-shadow: 0 0 1px var(--colorPerple);
     /*background: #d723;*/
     word-break: break-all;
-    line-height: 1.3rem;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
 }
 
 .gg {
