@@ -15,9 +15,9 @@ const AirtableComponent = () => {
   }, [ setData ] );
 
   return (
-    <>
-      { JSON.stringify( data, "", 1 ) } }
-    </>
+    <p>
+      { JSON.stringify( data, "", 1 ) }
+    </p>
   );
 };
 
