@@ -31,7 +31,7 @@ const NavigationComponent = () => {
             <>
             </>
         }
-        <div onClick={ event => setSelect( !select ) }>
+        <div onClick={ ()=> setSelect( !select ) }>
           <img src="/assets/svg/arrow_down.svg" width="30" alt={ "" }/>
         </div>
       </div>

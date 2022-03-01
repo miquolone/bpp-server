@@ -41,8 +41,8 @@ const Social = () => {
       <main>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
-            data.map( (member) => {
-              return <WakuComponent member={ member.fields }/>;
+            data.map( (member, index) => {
+              return <WakuComponent key={ index } member={ member.fields }/>;
             } )
           }
         </div>

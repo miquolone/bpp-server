@@ -35,7 +35,7 @@ const OpenSeaCharacter = () => {
         </p>
         <div className="activity_contents">
           {
-            nftPlanets.nft.celestials.map( (v, index) => {
+            nftPlanets.nft.celestials.map( (v) => {
               const url = new URL( v );
               const patternResolve = url.pathname.match( new RegExp( /.*assets\/(0x.*?)\/(.*)/ ) );
               if ( patternResolve ) {
@@ -54,7 +54,7 @@ const OpenSeaCharacter = () => {
       </section>
     );
 
-  }, [nftPlanets] );
+  }, [ nftPlanets ] );
   return ( memo );
 };
 export default OpenSeaCharacter;
