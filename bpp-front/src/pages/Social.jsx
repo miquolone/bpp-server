@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import WakuComponent from '../components/wakuComponent';
-import AirtableComponent from '../components/AirtableComponent';
 import { table, minifyRecords } from '../lib/airtable';
 
 const Social = () => {
