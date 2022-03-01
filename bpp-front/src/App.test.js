@@ -1,9 +1,16 @@
-
 import { render, screen } from '@testing-library/react';
+
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+window.particleInit = jest.fn();
+
+test( 'intersectionObserver has called', () => {
+
+  const observe = jest.fn();
+  window.IntersectionObserver = jest.fn( () => ( {
+    observe
+  } ) );
+
+  render( <App/> );
+  expect( observe ).toHaveBeenCalled();
+} );
