@@ -511,7 +511,7 @@ nft-card {
 .dd {
     font-weight: bold;
     width: 75%;
-    padding: 30px 40px 13px 75px;
+    padding: 30px 40px 13px 35px;
     color: #eee;
     font-size: 1.1rem;
     /*background: #d723;*/
@@ -529,7 +529,7 @@ nft-card {
     letter-spacing: 1px;
     max-height: 3rem;
     overflow: hidden;
-    padding: 12px;
+    padding: 12px 1.5rem;
     color: var(--colorPerpleDark);
     text-shadow: 0 0 1px var(--colorPerple);
     /*background: #d723;*/
