@@ -4,7 +4,7 @@ import React from 'react';
 import Home from './pages/Home';
 import MainComponent from './pages/Main';
 import StoreComponent from './pages/Store';
-import SocialComponent from './pages/Social';
+import MemberComponent from './pages/Members';
 import TransactionComponent from './pages/Transaction';
 import ContactComponent from './pages/Contact';
 import OrganizeComponent from './pages/Organize';
@@ -18,8 +18,8 @@ function App() {
           <Route path="store" element={ <StoreComponent/> }>
             <Route path=":nftId" element={ <StoreComponent/> }/>
           </Route>
-          <Route path="social" element={ <SocialComponent/> }>
-            <Route path=":name" element={ <SocialComponent/> }/>
+          <Route path="member" element={ <MemberComponent/> }>
+            <Route path=":name" element={ <MemberComponent/> }/>
           </Route>
           <Route path="transaction" element={ <TransactionComponent/> }>
             <Route path=":hash" element={ <TransactionComponent/> }/>

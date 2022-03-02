@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import WakuComponent from '../components/wakuComponent';
 import { table, minifyRecords } from '../lib/airtable';
 
-const Social = () => {
+const Members = () => {
 
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
   const [ data, setData ] = useState( [] );
@@ -18,7 +18,7 @@ const Social = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru( "social" );
+    window.init_cube_kurukuru( "member" );
     window.particleInit();
   }, [] );
 
@@ -30,7 +30,7 @@ const Social = () => {
           <div className="samePlanets">
             <canvas id="myCanvas">&emsp</canvas>
           </div>
-          S.O.C.I.A.L
+          M.E.M.B.E.R
         </div>
       </aside>
 
@@ -51,4 +51,4 @@ const Social = () => {
   );
 };
 
-export default Social;
+export default Members;

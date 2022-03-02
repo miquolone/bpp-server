@@ -23,7 +23,7 @@ const NavigationComponent = () => {
         {
           select ?
             <div className="wakusei">
-              <p className={ "nn1" } href="/social/">AA</p>
+              <p className={ "nn1" } href="/member/">AA</p>
               <p className={ "nn2" } href="/store/">BB</p>
               <p className={ "nn3" } href="/transaction/">CC</p>
             </div>
@@ -31,7 +31,7 @@ const NavigationComponent = () => {
             <>
             </>
         }
-        <div onClick={ ()=> setSelect( !select ) }>
+        <div onClick={ () => setSelect( !select ) }>
           <img src="/assets/svg/arrow_down.svg" width="30" alt={ "" }/>
         </div>
       </div>
