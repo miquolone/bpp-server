@@ -34,11 +34,9 @@ const Members = () => {
         </div>
       </aside>
 
-      <header>&emsp;
-        <div id="particles-js"/>
-      </header>
+      <div id="particles-js"/>
 
-      <main>
+      <div id={ "main" }>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
             data.map( (member, index) => {
@@ -46,7 +44,7 @@ const Members = () => {
             } )
           }
         </div>
-      </main>
+      </div>
     </>
   );
 };

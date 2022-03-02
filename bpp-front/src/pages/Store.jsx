@@ -27,15 +27,13 @@ const Store = () => {
         </div>
       </aside>
 
-      <header>&emsp;
-        <div id="particles-js"/>
-      </header>
+      <div id="particles-js"/>
 
-      <main>
+      <div id={"main"}>
         <OpenSeaCharacter/>
 
         <OpenSeaPlanets/>
-      </main>
+      </div>
 
     </>
   );

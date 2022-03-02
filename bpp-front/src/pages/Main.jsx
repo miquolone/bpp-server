@@ -97,7 +97,7 @@ const Main = () => {
         ＊ ＊ ＊ 大画面以外で露出 ＊ ＊ ＊
       </div>
 
-      <main className="mt4 pt0">
+      <div id={ "main_home" } className="mt4 pt0">
         <section className="activity">
           <h2>BPP</h2>
           <div className={ "p2" }>
@@ -185,7 +185,7 @@ const Main = () => {
         </section>
 
         <NavigationComponent/>
-      </main>
+      </div>
     </>
   );
 };
