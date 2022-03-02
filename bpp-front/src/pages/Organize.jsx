@@ -9,7 +9,7 @@ const OrganizeComponent = () => {
       setCircleRotateClass( 'gandam-transform' );
     }, 10 );
 
-    window.init_cube_kurukuru("organize");
+    window.init_cube_kurukuru( "organize" );
     window.particleInit();
   }, [] );
 
@@ -26,17 +26,33 @@ const OrganizeComponent = () => {
         </div>
       </aside>
 
-      <header>&emsp;
-        <div id="particles-js"/>
-      </header>
+      <div id="particles-js"/>
 
-      <main>
+      <div id={ "main" }>
         <section className="activity">
+          <div className="flex-center">
+            <p className={ "message" }>■▲■▲■▲■▲■▲■▲■▲■▲</p>
+          </div>
           <div className="flex-center">
             <p className={ "message" }>BPPは〜〜〜〜〜どんなとこ？について記載する</p>
           </div>
+          <div className="flex-center">
+            <p className={ "message" }>■▲■▲■▲■▲■▲■▲■▲■▲</p>
+          </div>
         </section>
-      </main>
+        <br/>
+        <section className="activity">
+          <div className="flex-center">
+            <p className={ "message" }>■▲■▲■▲■▲■▲■▲■▲■▲</p>
+          </div>
+          <div className="flex-center">
+            <p className={ "message" }>BPPは〜〜〜〜〜どんな団体？</p>
+          </div>
+          <div className="flex-center">
+            <p className={ "message" }>■▲■▲■▲■▲■▲■▲■▲■▲</p>
+          </div>
+        </section>
+      </div>
     </>
   );
 };

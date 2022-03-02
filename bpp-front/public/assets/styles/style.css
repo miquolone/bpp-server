@@ -30,6 +30,10 @@ ul {
     margin: 1rem;
 }
 
+.m3 {
+    margin: 3rem;
+}
+
 .mt5 {
     margin-top: 5rem;
 }
@@ -220,7 +224,8 @@ nav {
 
 
 .t_w {
-    color: #efefef;
+    color: var(--colorPerpleDark);
+    text-decoration: none;
 }
 
 .message {
@@ -303,7 +308,17 @@ main {
     border-radius: 1rem 1rem 0 0;
     line-height: 1.5rem;
     /*margin-bottom: 10rem;*/
-    padding: 200px 2rem 10rem;
+    padding: 200px 2rem 12rem;
+}
+
+#main {
+    z-index: var(--mainContent);
+    background: linear-gradient(#6208bf00, #7d00ff80);
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+    line-height: 1.5rem;
+    min-height: 60vh;
+    padding: 100px 2rem 10rem;
 }
 
 body {
