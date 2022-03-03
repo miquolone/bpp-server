@@ -1,10 +1,7 @@
 const airtable = require( 'airtable' );
 
-// Key: keyUatuYQPhRYSJEK
-// Base:  appQOTOWNdmjL5TuL
-
 const base = new airtable( { apiKey: `keyUatuYQPhRYSJEK` } ).base( `appQOTOWNdmjL5TuL` );
-const table = base( `Sheet1` );
+const table = base( `Members` );
 
 const minifyRecords = async (records) => {
   if ( records ) {
