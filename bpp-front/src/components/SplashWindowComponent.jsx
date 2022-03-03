@@ -25,7 +25,8 @@ const SplashWindowComponent = () => {
         document.querySelector( '#overWallCoverInner' ).style.border = '0';
         document.querySelector( '#overWallCoverInner' ).style.height = '100%';
         document.querySelector( '#overWallCoverInner img' ).classList.add( 'hide2s' );
-        document.querySelector( '#overWallCover' ).classList.add( 'hide1s' );
+
+        document.querySelector( '#overWallCover' ).classList.add( 'hide2s' );
         // setSplashed( true );
         setSplashed( true );
       }, 3000 );
