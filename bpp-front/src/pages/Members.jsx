@@ -1,7 +1,7 @@
 import { useEffect, useState, useContext } from 'react';
 import WakuComponent from '../components/wakuComponent';
 
-import { AirtableContext } from './Home';
+import { AirtableContext } from '../App';
 
 const Members = () => {
 
@@ -34,9 +34,12 @@ const Members = () => {
       <div id={ "main" }>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
-            airtableData?.members?.map( (member, index) => {
-              return <WakuComponent key={ index } member={ member.fields }/>;
-            } )
+            airtableData.members ?
+              airtableData?.members?.map( (member, index) => {
+                return <WakuComponent key={ index } member={ member.fields }/>;
+              } )
+              :
+              <div>Contextのロードを待たないといけない</div>
           }
         </div>
       </div>
