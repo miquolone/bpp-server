@@ -16,7 +16,7 @@ const splashedAtom = atomWithStorage(
 const SplashWindowComponent = () => {
   const [ splashed, setSplashed ] = useAtom( splashedAtom );
   useEffect( () => {
-    if ( !splashed ) {
+    // if ( !splashed ) {
       console.log( '[+] Splash init' );
       document.querySelector( '#overWallCoverInner' ).classList.add( 'expand1s' );
       document.querySelector( '#overWallCoverInner' ).style.backgroundColor = '#000';
@@ -27,9 +27,9 @@ const SplashWindowComponent = () => {
         document.querySelector( '#overWallCoverInner img' ).classList.add( 'hide2s' );
         document.querySelector( '#overWallCover' ).classList.add( 'hide2s' );
         // setSplashed( true );
-        setSplashed( false ); // splash の露出を100%にする
+        setSplashed( true );
       }, 3000 );
-    }
+    // }
   }, [ setSplashed, splashed ] );
 
   return (
