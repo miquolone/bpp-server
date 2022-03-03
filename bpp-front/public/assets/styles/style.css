@@ -305,9 +305,7 @@ header {
     z-index: var(--mainContent);
     background: linear-gradient(#6208bf00, #7d00ff80);
     position: relative;
-    border-radius: 1rem 1rem 0 0;
-    line-height: 1.5rem;
-    padding: 200px 2rem 12rem;
+    padding: 0 2rem 10rem;
 }
 
 

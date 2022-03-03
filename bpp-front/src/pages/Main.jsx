@@ -94,7 +94,7 @@ const Main = () => {
       </header>
 
       <div className={ "smallSizeMobileOnlyContent" }>
-        ＊ ＊ ＊ 大画面以外で露出 ＊ ＊ ＊
+
       </div>
 
       <div id={ "main_home" } className="mt4 pt0">
