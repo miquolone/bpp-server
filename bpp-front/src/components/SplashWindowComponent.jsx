@@ -28,7 +28,7 @@ const SplashWindowComponent = () => {
 
         document.querySelector( '#overWallCover' ).classList.add( 'hide2s' );
         // setSplashed( true );
-        setSplashed( true );
+        // setSplashed( true );
       }, 3000 );
     }
   }, [ setSplashed, splashed ] );
