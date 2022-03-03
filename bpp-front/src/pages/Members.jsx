@@ -1,17 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import WakuComponent from '../components/wakuComponent';
-import { table, minifyRecords } from '../lib/airtable';
+
+import { AirtableContext } from './Home';
 
 const Members = () => {
 
+  const airtableResultExample = useContext( AirtableContext );
+  console.log( 'airtableResultExample', airtableResultExample );
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
-  const [ data, setData ] = useState( [] );
-  useEffect( () => {
-    table.select( {} ).all().then( async records => {
-      const minifiedRecords = await minifyRecords( records );
-      setData( minifiedRecords );
-    } );
-  }, [ setData ] );
 
   useEffect( () => {
     setTimeout( () => {
@@ -39,7 +35,7 @@ const Members = () => {
       <div id={ "main" }>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
-            data.map( (member, index) => {
+            airtableResultExample.map( (member, index) => {
               return <WakuComponent key={ index } member={ member.fields }/>;
             } )
           }
