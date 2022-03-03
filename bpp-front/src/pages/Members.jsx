@@ -5,8 +5,7 @@ import { AirtableContext } from './Home';
 
 const Members = () => {
 
-  const airtableResultExample = useContext( AirtableContext );
-  console.log( 'airtableResultExample', airtableResultExample );
+  const airtableData = useContext( AirtableContext );
   const [ circleRotateClassName, setCircleRotateClass ] = useState( "" );
 
   useEffect( () => {
@@ -35,7 +34,7 @@ const Members = () => {
       <div id={ "main" }>
         <div Style={ "display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;" }>
           {
-            airtableResultExample.map( (member, index) => {
+            airtableData?.members?.map( (member, index) => {
               return <WakuComponent key={ index } member={ member.fields }/>;
             } )
           }

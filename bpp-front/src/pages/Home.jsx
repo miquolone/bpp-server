@@ -5,15 +5,19 @@ import SplashWindowComponent from '../components/SplashWindowComponent';
 import { createContext, useState, useEffect } from 'react';
 import { table, minifyRecords } from '../lib/airtable';
 
-export const AirtableContext = createContext( 'airtableの値を持ち回ろう' );
+export const AirtableContext = createContext( {} );
+
 const Home = () => {
-  const [ data, setData ] = useState( [] );
+
+  const [ airtableData, setAirtableData ] = useState( {} );
+
   useEffect( () => {
     table.select( {} ).all().then( async records => {
       const minifiedRecords = await minifyRecords( records );
-      setData( minifiedRecords );
+      airtableData.members = minifiedRecords;
+      setAirtableData( airtableData );
     } );
-  }, [ setData ] );
+  }, [airtableData, setAirtableData] );
 
   return (
     <>
@@ -21,7 +25,7 @@ const Home = () => {
 
       <NavbarComponent/>
 
-      <AirtableContext.Provider value={ data }>
+      <AirtableContext.Provider value={ airtableData }>
         <Outlet/>
       </AirtableContext.Provider>
 
