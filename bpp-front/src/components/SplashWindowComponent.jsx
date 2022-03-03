@@ -29,7 +29,7 @@ const SplashWindowComponent = () => {
         // setSplashed( true );
         setSplashed( true );
       }, 3000 );
-    // }
+    // } // splash の露出を100%にする
   }, [ setSplashed, splashed ] );
 
   return (
