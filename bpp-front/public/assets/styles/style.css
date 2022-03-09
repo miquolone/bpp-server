@@ -221,6 +221,11 @@ nav {
         bottom: 2rem;
         transform: scale(0.5) translateX(40vw);
     }
+
+    .backgroundYoutubePlayerScrolled iframe {
+        border: 3px solid #fff;
+        border-radius: 1rem;
+    }
 }
 
 header {
