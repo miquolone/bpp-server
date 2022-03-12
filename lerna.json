@@ -1,7 +1,0 @@
-{
-  "packages": [
-    "bpp-front",
-    "bpp-server"
-  ],
-  "version": "0.0.0"
-}
