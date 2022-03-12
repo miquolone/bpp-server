@@ -13,11 +13,15 @@ router.get("/", (context) => {
 });
 
 router.get("/next", (context) => {
+  // deno.landでは稼働しない
   context.response.body = ReactDOMServer.renderToString(
     <Main/>
   );
-}).get("/image", () => {
-}).get("/shop/:id", (context) => {
+})
+
+router.get("/image", () => { })
+
+router.get("/shop/:id", (context) => {
   if (context?.params?.id) {
     context.response.body = context.params.id;
   }
@@ -33,16 +37,6 @@ app.use(async (context) => {
   });
 })
 
-
-function HTTPRequestHandler() {
-  return new Response( '', {
-    status: 301,
-    statusText: "301 Moved Permanently",
-    headers: {
-      "Location": "https://bpp-ten.vercel.app/"
-    }
-  } );
-}
 
 await app.listen({port: 8000});
 console.log("Listening on http://localhost:8000");
