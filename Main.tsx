@@ -1,20 +1,14 @@
 import {React,ReactDOMServer,BrowserRouter} from "./dep.ts";
 
-import OpenSeaPlanets from "./OpenSeaPlanets.tsx";
-import OpenSeaCharacter from "./OpenSeaCharacter.tsx";
 
 const Main = () => {
     return (
         <>
             <main>
 
-                <OpenSeaCharacter/>
-
                 <div className="samePlanets">
                     <canvas id="myCanvas">&emsp</canvas>
                 </div>
-
-                <OpenSeaPlanets/>
 
                 <section className="memberActivity">
                     <h2>BPPは友達を集めてるよ</h2>
