@@ -54,4 +54,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "bpp"
-          entrypoint: "./main.tsx" # TODO(miquolone): update
+          entrypoint: "../main.tsx" # TODO(miquolone): update
