@@ -1,5 +1,5 @@
 
-import { serve } from "https://deno.land/std@0.125.0/http/server.ts";
+import { serve } from "https://deno.land/std@0.129.0/http/server.ts";
 import {Application, send, Router} from "https://deno.land/x/oak/mod.ts";
 import {React, ReactDOMServer} from "./dep.ts";
 
