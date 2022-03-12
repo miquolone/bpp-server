@@ -1,5 +1,6 @@
-# BPP
 
+# BPP
+[![Deno](https://github.com/miquolone/bpp-server/actions/workflows/deno.yml/badge.svg?branch=main)](https://github.com/miquolone/bpp-server/actions/workflows/deno.yml)
 [![Discord](https://img.shields.io/discord/895078439709708318?logo=discord&style=social&label=discord)](https://discord.gg/bpp)
 
 <img align="right" src="https://cdn.discordapp.com/attachments/895078442637336628/919609231739617311/BPP_1.png" height="150px" alt="bpp">
