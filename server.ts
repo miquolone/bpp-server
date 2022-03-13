@@ -21,7 +21,7 @@ function HTTPRequestHandler(req: Request): Response {
     };
 
     try {
-      const file = Deno.readFileSync("./bpp-front/public/" + pathname);
+      const file = Deno.readFileSync("./assets/" + pathname);
       return new Response(file, {
         headers: {"content-type": mimeList[extension]}
       });
