@@ -40,3 +40,16 @@ app.use(async (context) => {
 
 await app.listen({port: 8000});
 console.log("Listening on http://localhost:8000");
+
+function HTTPRequestHandler(req) {
+  return new Response( '', {
+    status: 301,
+    statusText: "301 Moved Permanently",
+    headers: {
+      "Location": "https://bpp-ten.vercel.app/"
+    }
+  } );
+}
+
+console.log( "Listening on http://localhost:8000" );
+await serve( HTTPRequestHandler );
