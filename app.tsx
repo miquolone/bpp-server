@@ -1,7 +1,6 @@
 
 import { serve } from "https://deno.land/std@0.125.0/http/server.ts";
 import {Application, send, Router} from "https://deno.land/x/oak/mod.ts";
-import {React, ReactDOMServer} from "./dep.ts";
 
 import Main from "./Main.tsx";
 
@@ -13,10 +12,6 @@ router.get("/", (context) => {
 });
 
 router.get("/next", (context) => {
-  // deno.landでは稼働しない
-  context.response.body = ReactDOMServer.renderToString(
-    <Main/>
-  );
 })
 
 router.get("/image", () => { })
@@ -41,7 +36,7 @@ app.use(async (context) => {
 await app.listen({port: 8000});
 console.log("Listening on http://localhost:8000");
 
-function HTTPRequestHandler(req) {
+function HTTPRequestHandler() {
   return new Response( '', {
     status: 301,
     statusText: "301 Moved Permanently",
