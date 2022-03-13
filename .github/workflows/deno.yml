@@ -48,5 +48,5 @@ jobs:
         with:
           project: "bpp"
           root: ./
-          entrypoint: "Main.tsx"
+          entrypoint: "./app.tsx"
           
