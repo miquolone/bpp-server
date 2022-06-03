@@ -13,6 +13,7 @@ BPPの活動を紹介するページを制作するためのレポジトリで�
 https://bpp.deno.dev/
 https://bpp-ten.vercel.app/
 https://bpp-front.netlify.app/
+https://bpp-front-7po.pages.dev/
 
 
 ### フロント側処理
