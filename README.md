@@ -13,6 +13,9 @@ BPPの活動を紹介するページを制作するためのレポジトリで�
 ### 現在の状態
 
 https://bpp.deno.dev/
+https://bpp-ten.vercel.app/
+https://bpp-front.netlify.app/
+
 
 ### フロント側処理
 https://github.com/miquolone/bpp-front
